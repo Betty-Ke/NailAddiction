@@ -1,0 +1,188 @@
+@import url('reset.css');
+
+body{
+    font-family: "Lato", "微軟正黑體";
+    font-size: 16px;
+    letter-spacing: 3px;
+    line-height: 1.6;
+    color: #7c7a7a;
+}
+
+a{
+    text-decoration: none;
+    color: #7c7a7a;
+    display: block;
+    line-height: 30px;
+    text-align: center;
+}
+
+/* 主要內容區塊 */
+.content_block{
+    /* border: 1px solid orange; */
+    margin: 0 auto;
+    width: 1200px;
+}
+
+/* header start */
+header{
+    /* border: 1px solid #000; */
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    /* border: 1px solid #000; */
+    width: 110px;
+}
+
+.logo img{
+    display: block;
+    width: 100%;
+}
+
+.logo a:hover{
+    opacity: .6;
+}
+
+/* nav start */
+.nav{
+    /* border: 1px solid red; */
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav li a{
+    /* border: 1px solid #000; */
+    font-weight: bold;
+    transition: .5s;
+}
+
+.nav a:hover{
+    color: #FABFBF;
+}
+
+.nav li a::after{
+    content: "";
+    display: block;
+    visibility: hidden;
+    height: 2px;
+    transition: .5s;
+}
+
+.nav li:hover a::after{
+    content: "";
+    visibility: visible;
+    background-color: #FABFBF;
+}
+
+.nav_right{
+    /* border: 1px solid green; */
+    display: flex;
+    width: 200px;
+    justify-content: space-around;
+}
+
+.nav_right li a{
+    font-size: 19px;
+    opacity: 1;
+    transition: .5s;
+}
+
+.nav_right a:hover{
+    opacity: .6;
+    color: #FABFBF;
+}
+/* nav end */
+/* header end */
+
+/* footer start */
+footer{
+    height: 200px;
+    border-top: 1px solid #4D4D4D;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+
+.gototop{
+    background-color: #FABFBF;
+    opacity: .8;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: -62px;
+}
+
+.foot{
+    margin: 50px auto 20px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.foot a:hover{
+    color: #FABFBF;
+}
+
+.rfoot{
+    /* border: 1px solid #000; */
+    width: 50%;
+    order: 2;
+}
+
+.rfoot_top{
+    /* border: 1px solid purple; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.rfoot_bot{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+.rfoot_top li{
+    /* border: 1px solid #000; */
+    margin-bottom: 10px;
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.rfoot_bot li{
+    /* border: 1px solid #000; */
+    flex-basis: 0;
+    flex-grow: .25;
+}
+
+.lfoot{
+    /* border: 1px solid blue; */
+    width: 40%;
+    
+}
+
+.lfoot a{
+    font-size: 20px;
+}
+
+.lfoot_top{
+    /* border: 1px solid blue; */
+    margin-bottom: 10px;
+    width: 30%;
+    display: flex;
+    justify-content:space-around;
+}
+
+.lfoot_bot{
+    /* border: 1px solid hotpink; */
+    padding-left: 10px;
+}
+
+/* footer end */
