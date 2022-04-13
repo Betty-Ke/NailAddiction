@@ -1,4 +1,3 @@
-@import url('reset.css');
 
 /* main start */
 .main_slider{
@@ -319,7 +318,6 @@ article{
 }
 
 .atc_img img{
-    display: block;
     width: 100%;
 }
 /* article end */
@@ -336,7 +334,6 @@ article{
 }
 
 .last_block img{
-    display: block;
     width: 100%;
     border: 4px solid white;
     box-sizing: border-box;
