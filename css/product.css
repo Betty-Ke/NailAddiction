@@ -1,1 +1,170 @@
 
+.nav li:nth-child(3) a{
+    color: #FABFBF;
+}
+
+.nav li:nth-child(3) a::after{
+    visibility: visible;
+}
+
+/* product top */
+.pdt_top{
+    height: 600px;
+    position: relative;
+    /* border: 1px solid #000; */
+}
+
+.pdt_top_left{
+    width: 340px;
+    height: 400px;
+    background-color: #FABFBF;
+    position: absolute;
+    left: -150px;
+}
+
+.pdt_top_ibox{
+    width: 1180px;
+    height: 500px;
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    z-index: 2;
+}
+
+.pdt_top_right{
+    width: 340px;
+    height: 400px;
+    background-color: #B1D6C7;
+    position: absolute;
+    bottom: 0;
+    right: -150px;
+}
+/* product end */
+
+/* product nav */
+.breadcrumbs{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.breadcrumbs li{
+    margin-right: 10px;
+}
+
+.breadcrumbs a:hover{
+    color: #FABFBF;
+}
+
+/* Cat menu start */
+.cat_menu{
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #000; */
+    font-size: 18px;
+}
+
+.cat_menu li{
+    /* border: 1px solid #000; */
+    margin-right: 40px;
+}
+
+.cat_btn a{
+    width: 100px;
+    line-height: 45px;
+    border: 3px solid #FABFBF;
+    border-radius: 70px;
+    font-weight: bold;
+    color:#FABFBF;
+    transition: .4s;
+}
+
+.cat_btn a:hover{
+    background-color: #FABFBF;
+    color:white;
+}
+
+/* 分類選單  */
+.cat_btn_now a{
+    background-color: #FABFBF;
+    color:white;
+}
+
+/* Cat menu end */
+/* product nav end */
+
+
+/* Products start */
+.pdt_main{
+    /* border: 3px solid blue; */
+    padding-top: 30px;
+}
+
+.pdt_container{
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pdt_card{
+    width: 300px;
+    height: 350px;
+    border: 1px solid #FABFBF;
+    margin-bottom: 30px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.pdt_container a:nth-child(even) div{
+    border: 1px solid #B1D6C7
+}
+
+.pdt_card img{
+    margin: 30px auto 30px;
+    /* border: 1px solid brown; */
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .3));
+}
+
+.pdt_card_sale p{
+    display: inline-block;
+    text-decoration: line-through;
+}
+
+.pdt_card_sale span{
+    color: #FABFBF;
+}
+
+.pdt_container a:nth-child(odd):hover div{
+    box-shadow: 5px 5px 10px rgba(250, 191, 191, .8);
+    transform: translate(-5px, -5px);
+}
+
+.pdt_container a:nth-child(even):hover div{
+    box-shadow: 5px 5px 10px rgba(177, 214, 199, .8);
+    transform: translate(-5px, -5px);
+}
+
+.pdt_page ul{
+    /* border: 3px solid darkorange; */
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.pdt_page ul a:hover{
+    color: #FABFBF;
+    color:in
+}
+/* Products start end */
+
+
+/* ----- product Detail ----- */
+
+
+/* product Detail end*/
+

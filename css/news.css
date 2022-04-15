@@ -1,8 +1,8 @@
-.nav li:nth-child(1) a{
+.nav li:nth-child(2) a{
     color: #FABFBF;
 }
 
-.nav li:nth-child(1) a::after{
+.nav li:nth-child(2) a::after{
     visibility: visible;
 }
 
