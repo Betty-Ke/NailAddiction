@@ -1,0 +1,66 @@
+.nav li:nth-child(4) a{
+    color: #FABFBF;
+}
+
+.nav li:nth-child(4) a::after{
+    visibility: visible;
+}
+
+/* lookbook top */
+.share_pic{
+    width: 1200px;
+    height: 442px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.share_pic li{
+    background-size: cover;
+    background-position: center center;
+    transition: .5s;
+    margin: 5px;
+    border-radius: 10px;
+}
+
+.share_pic .pic1{
+    background-image: url('../img/look1.png');
+    flex-grow: 2;
+}
+
+.share_pic .pic2{
+    background-image: url(../img/look2.png);
+    flex-grow: 2;
+}
+
+.share_pic .pic3{
+    background-image: url(../img/look3.png);
+    flex-grow: 1;
+}
+
+.share_pic .pic4{
+    background-image: url(../img/look4.png);
+    flex-grow: 2;
+}
+.share_pic li:hover{
+    flex-grow: 4;
+}
+
+
+
+/* lookbook top end */
+/* news content */
+.breadcrumbs{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.breadcrumbs li{
+    /* border: 1px solid #000; */
+    margin-right: 10px;
+}
+
+.breadcrumbs a:hover{
+    color: #FABFBF;
+}

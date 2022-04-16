@@ -3,6 +3,7 @@
 .main_slider{
     /* border: 3px solid blue; */
     height: 600px;
+    width: 100%;
     position: relative;
 }
 
@@ -183,7 +184,7 @@ section h3{
 }
 
 .cat_box{
-    background-color: white;
+    /* background-color: #e5e5e5; */
     width: 280px;
     height: 280px;
     /* width: 15vw;
@@ -228,11 +229,16 @@ section h3{
     font-size: 100px;
     line-height: 1;
     font-weight: 900;
-    opacity: .5;
+    /* border: 3px dashed #e5e5e5; */
+    /* opacity: .5; */
     overflow: visible;
     display: flex;
     flex-direction: column;
     position: relative;
+}
+
+.cat1>div, .cat2 div:last-child, .cat3 div:first-child, .cat4 div:first-child{
+    border: 3px dashed #e5e5e5;
 }
 
 .cat_box_t h3{
@@ -242,18 +248,19 @@ section h3{
 
 .cat_box_t h4{
     position: absolute;
-    top: 35%;
+    top: 30%;
     left: 40%; 
 }
 
 .cat_box_t h5{
     position: absolute;
-    bottom: -2%;
+    bottom: 2%;
     left: 13%;
 }
 
 .cat1:hover .cat_box_b{
     background-color:#FABFBF;
+    color: white;
 }
 
 .cat2{

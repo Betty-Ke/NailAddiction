@@ -112,7 +112,7 @@ header{
 /* gototop */
 .gototop{
     /* outline: 1px solid rgb(241, 67, 67); */
-    width: 1366px;
+    width: 1200px;
     height: 80px;
     display: flex;
     justify-content: flex-end;

@@ -89,28 +89,38 @@
     </nav>
     <!-- product nav end -->
 
-    <!-- Products start -->
+    <!-- Product item start -->
     <main class="content_block pdt_main">
-        <div class="pdt_container">
-            <div class="pdt_card pdt_cat3">
-                <img src="img/pdtj1.png" alt="">
-                <h4>Maroon Jelly - J001</h4>
-                <p>NT$ 200</p>
-            </div>
-            <div class="pdt_card pdt_cat3">
-                <img src="img/pdtj2.png" alt="">
-                <h4>Tiffany Jelly - J018</h4>
-                <p>NT$ 200</p>
-            </div>
-            <div class="pdt_card pdt_card_sale pdt_cat2">
-                <img src="img/pdtm1.png" alt="">
-                <h4>Matt Rose - M012</h4>
-                <p>NT$ 250</p>
-                <span>200</span>
+        <div class="pdtitem_container">
+            <ul>
+                <li><img src="img/pdtj2.png" alt=""></li>
+                <li>
+                    <div class="text_box">
+                        <h4>Tiffany Jelly - J018</h4>
+                        <h5>果凍系列</h5>
+                        <h6>半透明的質地、適合做暈染，
+                            <br>不同疊擦方式可創造漸層感，
+                            <br>就是要讓人覺得若有似無，
+                            <br>連指甲都帶好氣色!
+                        </h6>
+                        <p>NT$ 200</p>
+                        <span></span>
+                    </div>
+                    <ol class="btn-numbox">
+                        <li><span  id="numcut" class="numcut">-</span></li>
+                        <li><input type="text" class="input-num" id="inputnum" value="1"/></li>
+                        <li><span id="numplus" class="numplus">+</span></li>
+            　　　  </ol>
+                    <div class="btn_box">
+                        <button>Buy</button>
+                        <button>Try</button>
+                    </div>
+                </li>
+            </ul>
         </div>
         
     </main>
-    <!-- Products end -->
+    <!-- Product item end -->
 
     <!-- gototop -->
     <div class="gototop">
@@ -164,6 +174,8 @@
     </footer>
 
     <!-- footer end -->
+
+    <script src="js/index.js"></script>
 
 </body>
 </html>

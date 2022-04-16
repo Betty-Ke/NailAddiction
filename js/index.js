@@ -24,3 +24,21 @@ function dot_click(){
 
 }
     
+
+
+
+// 購物車數量
+var numplus = document.getElementById("numplus");
+var numcut = document.getElementById("numcut");
+var inputnum = document.getElementById("inputnum");
+
+numplus.addEventListener("click", function(){
+    inputnum.value = parseInt(inputnum.value) + 1;
+});
+numcut.addEventListener("click", function(){
+    if(inputnum.value <= 0){
+        inputnum.value = 0;
+    }else{
+        inputnum.value = parseInt(inputnum.value) - 1;
+    }
+});

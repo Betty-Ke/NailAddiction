@@ -1,0 +1,103 @@
+/* contact main */
+main.contact{
+    height: 750px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+
+.contact p:first-child{
+    width: 680px;
+    height: 420px;
+    background-color: #FABFBF;
+}
+
+.contact p:nth-child(2){
+    width: 515px;
+    height: 360px;
+    background-image:url(../img/ctbg.png);
+    margin-left: 100%;
+    transform: translateX(-520px);
+    margin-top: -25%;
+}
+
+.contact p:nth-child(3){
+    width: 475px;
+    height: 340px;
+    background-color: #888;
+    margin-left: 30%;
+    margin-top: -6%;
+    z-index: 2;
+}
+
+.contact_pic{
+    width: 365px;
+    height: 445px;
+    background-image: url(../img/ctpic.png);
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.contact_t{
+    width: 345px;
+    height: 425px;
+    background-color: #4D4D4D;
+    position: absolute;
+    bottom: 6%;
+    right: 19%;
+}
+
+.contact_t span{
+    display: block;
+    width: 70%;
+    margin: 30px auto;
+    color: white;
+}
+/* contact main end */
+
+/* contact form */
+section{
+    width: 1440px;
+    height: 725px;
+    margin: 0 auto 10px;
+    /* border: 1px solid #000; */
+    position: relative;
+}
+
+section p:first-child{
+    width: 340px;
+    height: 400px;
+    background-color: #B1D6C7;
+}
+
+.contact_form{
+    width: 970px;
+    height: 540px;
+    border: 5px solid #FABFBF;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 17%;
+}
+
+section p:last-child{
+    width: 380px;
+    height: 400px;
+    background-color: #FABFBF;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+section h3{
+    font-size: 80px;
+    letter-spacing: 10px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+    position: absolute;
+    top: -10%;
+    left: 8%;
+}
+
+/* contact form end */
