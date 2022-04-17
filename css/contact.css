@@ -49,7 +49,8 @@ main.contact{
 
 .contact_t span{
     display: block;
-    width: 70%;
+    font-size: 20px;
+    width: 80%;
     margin: 30px auto;
     color: white;
 }
@@ -99,5 +100,48 @@ section h3{
     top: -10%;
     left: 8%;
 }
+
+.contact_form_text{
+    font-size: 20px;
+    width: 60%;
+    margin: 50px 150px;
+    box-sizing: border-box;
+}
+
+.contact_form_text span{
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.contact_form_text p{
+    margin-bottom: 50px;
+}
+
+.contact_form_text input[type=text], .contact_form_text textarea{
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none;
+    font-size: 18px;
+    outline: none;
+  }
+
+  .contact_form_text input[type=submit]{
+    margin-left: 25%;
+    margin-top: 20px;
+    width: 50%;
+    border: none;
+    background-color: #FABFBF;
+    font-size: 20px;
+    line-height: 40px;
+    border-radius: 10px;
+    color: white;
+  }
+  
+  label{
+    padding: 40px 12px 12px 0;
+  }
+  
 
 /* contact form end */

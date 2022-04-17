@@ -58,6 +58,7 @@
 .new_wrapper{
     width: 1440px;
     margin: 0 auto;
+    /* border: 1px solid #000; */
 }
 
 .new_wrapper section{
@@ -69,11 +70,12 @@
 }
 
 .new_wrapper div{
-    border: 4px solid #FABFBF;
+    border: 2px solid #FABFBF;
     border-radius: 10px 10px 0 10px;
     width: 1080px;
     box-sizing: border-box;
     padding: 5px;
+    cursor: pointer;
 }
 
 .new1 p, .new3 p{
@@ -82,8 +84,8 @@
     background-color: #FABFBF;
     border-radius: 10px;
     display: inline-block;
-    margin-left: 100%;
-    transform: translateX(-500px);
+    margin-left: 65.3%;
+    /* transform: translateX(-500px); */
     margin-top: -350px;
     clip-path: polygon(28% 0, 100% 0, 100% 100%, 0 100%, 0 72.8%, 28% 72.8%);
 }
@@ -91,7 +93,7 @@
 .new2 > div{
     margin-left: 25%;
     border-radius: 10px 10px 10px 0;
-    border: 4px solid #B1D6C7;
+    border: 2px solid #B1D6C7;
 }
 
 .new2 p{
@@ -101,9 +103,45 @@
     border-radius: 10px;
     display: inline-block;
     margin-top: -350px;
-    clip-path: polygon(0 0, 72.8% 0, 72.8% 72.8%, 100% 72.8%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 72.1% 0, 72.1% 72.8%, 100% 72.8%, 100% 100%, 0 100%);
 }
 
+.new_wrapper div::after{
+    content: "";
+    display: block;
+    text-align: center;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, .4);
+    color: white;
+    font-size: 70px;
+    padding-top: 120px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 1065px;
+    height: 490px;
+    background-image: linear-gradient(rgba(250, 191, 191, .4) 0%, rgba(250, 191, 191, .6) 60%, rgba(250, 191, 191, .8) 100%);
+    position: absolute;
+    display: none;
+}
+
+.new1pic:hover::after{
+    content: "果凍系列指彩 3件79折 2022.04.15";
+    display: block;
+    top: 800px;
+}
+
+.new2pic:hover::after{
+    content: "消費滿1500 現折200 2022.04.02";
+    display: block;
+    background-image: linear-gradient(rgba(177, 214, 199, .4) 0%, rgba(177, 214, 199, .6) 60%, rgba(177, 214, 199, .8) 100%);
+    top: 1440px;
+}
+
+.new3pic:hover::after{
+    content: "2022 夏日新品上市";
+    display: block;
+    position: absolute;
+    top: 2080px;
+}
 
 /* news end */
 

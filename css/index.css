@@ -96,6 +96,17 @@ section{
     position: relative;
 }
 
+section::after{
+    content: "";
+    display: block;
+    background-image: url(../img/slash_bg.png);
+    width: 100%;
+    height: 30%;
+    position: absolute;
+    top: 35%;
+    z-index: -1;
+}
+
 section h3{
     font-size: 40px;
     letter-spacing: 15px;
@@ -258,7 +269,7 @@ section h3{
     left: 13%;
 }
 
-.cat1:hover .cat_box_b{
+.cat1:hover .cat_box{
     background-color:#FABFBF;
     color: white;
 }

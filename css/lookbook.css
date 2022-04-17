@@ -45,10 +45,8 @@
     flex-grow: 4;
 }
 
-
-
 /* lookbook top end */
-/* news content */
+/* lookbook content */
 .breadcrumbs{
     width: 30%;
     display: flex;
@@ -64,3 +62,165 @@
 .breadcrumbs a:hover{
     color: #FABFBF;
 }
+
+/* lookbook main */
+main.tryit{
+    height: 1020px;
+    /* border: 1px solid #000; */
+    
+}
+
+main.tryit::before{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 10%;
+    background-image: url(../img/slash_bg.png);
+    background-repeat: repeat-x;
+    margin-left: 15%;
+    transform-origin: top;
+    transform: rotate(-10deg);
+} 
+
+main.tryit h3{
+    font-size: 60px;
+    margin-top: -8%;
+    margin-left: 25%;
+}
+
+.choose{
+    width: 60%;
+    display: flex;
+    /* border: 1px solid #000; */
+    justify-content: center;
+    margin: 20px 150px;
+}
+
+#category_btn{
+    width: 25%;
+    padding: 16px 20px;
+    font-size: 24px;
+    letter-spacing: 10px;
+    border: 1px solid #FABFBF;
+    border-radius: 10px;
+    flex-grow: 1;
+  }
+
+.colors{
+    width: 40%;
+    flex-grow: 3;
+    display: flex;
+    justify-content: space-around;
+}
+
+.colors li{
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    /* border: 1px solid #000; */
+    margin: 10px;
+    background-image: url(../img/colorsj.png);
+}
+
+.color1{background-position: 0, 0;}
+.color2{background-position: -50px, 0;}
+.color3{background-position: -100px, 0;}
+.color4{background-position: -150px, 0;}
+.color5{background-position: -200px, 0;}
+
+.changecolor{
+    /* border: 1px solid red; */
+    width: 100%;
+    height: 60%;
+    margin-top: 40px;
+    display: inline-flex;
+    /* background-color: #e5e5e5; */
+}
+
+.changecolor h2{
+    font-size: 80px;
+    letter-spacing: 15px;
+    line-height: 1;
+    font-weight: bold;
+    color: #B1D6C7;
+    writing-mode: vertical-lr;
+    margin-right: 60px;
+}
+
+.handpic{
+    /* border: 1px solid #000; */
+    width: 60%;
+    background-image: url(../img/o_hand.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center bottom; 
+    margin-right: 60px;
+}
+
+.handpic::after{
+    content: "";
+    display: block;
+    width: 120%;
+    height: 30%;
+    margin-left: -30%;
+    margin-top: 70%;
+    transform: rotate(20deg);
+    background-image: url(../img/slash_bg.png);
+} 
+
+.lookbook_product{
+    border: 1px solid #FABFBF;
+    width: 350px;
+    height: 450px;
+    font-size: 20px;
+}
+
+.lookbook_product img{
+    margin: 20px auto;
+    filter: drop-shadow(10px 10px 5px rgba(0, 0, 0, .3));
+}
+
+.btn-numbox{
+    width: 50%;
+    margin: 10px auto;
+    /* border: 1px solid #000; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-numbox span:hover{
+    cursor: pointer;
+    color: #FABFBF;
+}
+
+.numcut, .input-num, .numplus{
+    display: inline-block;
+    width: 50px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 30px;
+    /* border: 1px solid red; */
+}
+
+.btn_box{
+    /* border: 1px solid #000; */
+    width: 90%;
+    margin: 20px auto;
+}
+
+.lookbook_product button{
+    display: inline-block;
+    background-color: #FABFBF;
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+    border: 0;
+    font-size: 24px;
+    letter-spacing: 3px;
+    color: white;
+    margin: 10px 30px;
+}
+
+/*  */
+/* lookbook main end */
