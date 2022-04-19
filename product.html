@@ -92,10 +92,10 @@
 
         <!-- Cat menu start -->
         <ul class="cat_menu">
-            <li class="cat_btn cat1 cat_btn_now"><a href="#">All</a></li>
-            <li class="cat_btn cat2"><a href="#">MATT</a></li>
-            <li class="cat_btn cat3"><a href="#">JELLY</a></li>
-            <li class="cat_btn cat4"><a href="#">CAT-EYE</a></li>
+            <li class="cat_btn cat_btn_now"><a href="#" id="cat1">All</a></li>
+            <li class="cat_btn"><a href="#" id="cat2">MATT</a></li>
+            <li class="cat_btn"><a href="#" id="cat3">JELLY</a></li>
+            <li class="cat_btn"><a href="#" id="cat4">CAT-EYE</a></li>
         </ul>
         <!-- Cat menu end -->
     </nav>
@@ -110,7 +110,7 @@
                     <h4>Maroon Jelly - J001</h4>
                     <p>NT$ 200</p>
                 </div>
-            </a>
+            </a>              
             <a href="product_d.html">
                 <div class="pdt_card pdt_cat3">
                     <img src="img/pdtj2.png" alt="">
@@ -174,7 +174,7 @@
             <a href="product_d.html">
                 <div class="pdt_card pdt_card_sale pdt_cat2">
                     <img src="img/pdtm4.png" alt="">
-                    <h4>Milk Tea Jelly - M022</h4>
+                    <h4>Milk Tea Matt - M022</h4>
                     <p>NT$ 250</p>
                     <span>200</span>
                 </div>
@@ -292,5 +292,12 @@
 
     <!-- footer end -->
 
+    <script src="js/index.js"></script>
+	<script>
+		btn_cat('cat1', 'pdt_card', 'pdt_card');
+		btn_cat('cat2', 'pdt_card', 'pdt_cat2');
+		btn_cat('cat3', 'pdt_card', 'pdt_cat3');
+        btn_cat('cat4', 'pdt_card', 'pdt_cat4');
+	</script>
 </body>
 </html>
