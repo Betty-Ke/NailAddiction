@@ -9,6 +9,7 @@
 
 /* product top */
 .pdt_top{
+    width: 1366px;
     height: 600px;
     position: relative;
     /* border: 1px solid #000; */
