@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>指癮 | STORY</title>
+    <title>指癮 | Shop List</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> 
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/shoplist.css">
+    
 </head>
 <body>
     <!-- header start -->
@@ -64,6 +65,24 @@
             </ul>
     </header>
     <!-- header end -->
+    <!-- breadcrumbs -->
+    <ul class="breadcrumbs">
+        <li>
+            <a href="index.html">HOME</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-angle-right"></i>
+        </li>
+        <li>
+            <a href="product.html">PRODUCT</a>
+        </li>
+        <li>
+            <i class="fa-solid fa-angle-right"></i>
+        </li>
+        <li>
+            SHOPLIST
+        </li>
+    </ul>
     <!-- toggle -->
     <div class="toggle">
         <div class="toggle-in">
@@ -82,60 +101,88 @@
         </div>
     </div>
     <!-- toggle end -->
-    <!-- news top -->
-    <section class="news_top">
-        <div class="news_img"><img src="img/news_top.png" alt=""></div>
-        <div class="news_right"></div>
-        <div class="news_text">NEWS</div>
+
+    <!-- shoplist -->
+    <section class="content_block shopprocess">
+        <ul>
+            <li>
+                <div>1</div>
+                <span>購物車</span>
+            </li>
+            <li>
+                <div>2</div>
+                <span>填寫資料</span>
+            </li>
+            <li>
+                <div>3</div>
+                <span>完成訂單</span>
+            </li>
+        </ul>
     </section>
-    <!-- news top end -->
 
-    <!-- news content -->
-    <div class="content_block">
+    <main class="content_block shopping_cart"> 
+        <div class="shopping_list"> 
+            <ul> 
+                <li id="shop_car_count">購物車(1件)</li> 
+                <li>商品名稱</li> 
+                <li>單價</li> 
+                <li>折扣價</li> 
+                <li>數量</li>
+                <li>小計</li>
+                <li>刪除</li>
+            </ul> 
+        </div> 
+    
+     <!-- 抓取的資料放進這個DIV裡 -->
+        <div class="iteminfo"></div>
+    </main> 
 
-        <!-- breadcrumbs -->
-        <ul class="breadcrumbs">
-            <li>
-                <a href="index.html">HOME</a>
-            </li>
-            <li>
-                <i class="fa-solid fa-angle-right"></i>
-            </li>
-            <li>
-                NEWS
-            </li>
-        </ul>
+    <div class="content_block checkout">
+        <div class="payinfo">
+            <div>選擇付款及運送方式</div>
+
+            <div class="payinfo_item">
+                <label for="payway">付款方式</label>
+                <select id="payway" name="payway">
+                    <option value="">線上刷卡</option>
+                    <option value="">取貨付款</option>
+                    <option value="">Line-Pay</option>
+                </select>
+
+                <!-- +++ -->
+                <label for="deliver">運送方式</label>
+                <select id="deliver" name="deliver">
+                    <option value="">全家</option>
+                    <option value="">7-11</option>
+                    <option value="">宅配</option>
+                </select>
+                
+                <label for="coupon">優惠碼</label>
+                <input type="text" placeholder="請輸入優惠碼" id="coupon"><br>
+            </div>
+        </div>
+
+
+        <div class="pricesummary">
+            <div>訂單資料</div>
+            <ul>
+                <li><span>小計</span><span class="summary_subtotal summary"></span></li>
+                <li><span>運費</span><span class="summary">60</span></li>
+                <li><span>優惠碼</span><span class="summary">0</span></li>
+                <li><span>購物金</span><span class="summary">0</span></li>
+            </ul>
+
+            <div>總金額
+                <span>NT$ <span id="total">420</span></span>
+            </div>
+        </div> 
+
     </div>
-    <!-- news -->
-    <main class="content_block new_wrapper">
-        <div class="color_block1"></div>
-        <div class="color_block2"></div>
-        <div class="color_block3"></div>
-        <ul class="news">
-            <li class="new1">
-                <img src="img/new1.png" alt="">
-                <div>果凍系列指彩 3件79折 2022.04.15</div>
-            </li>
-            <li class="new2">
-                <img src="img/new2-2.png" alt="">
-                <div>消費滿$1500 現折$200 2022.04.02</div>
-            </li>
-            <li class="new3">
-                <img src="img/new3.png" alt="">
-                <div>2022 夏日新品上市</div>
-            </li>
-        </ul>
-
-    </main>
-  
-    <!-- news content end -->
-
-    <!-- gototop -->
-    <div class="gototop">
-        <a href="#">
-            <h4>Top</h4>
-        </a>
+    <div class="btns">
+        <button class="btn_continue">繼續購物</button>
+        <button class="btn_chackout">結帳</button>
     </div>
+
     <!-- footer start -->
     <footer class="content_block">
         <div class="foot">
@@ -182,6 +229,8 @@
     </footer>
 
     <!-- footer end -->
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/shoplist.js"></script>
     <script src="js/common.js"></script>
 </body>
 </html>

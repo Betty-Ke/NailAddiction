@@ -6,41 +6,47 @@ main.contact{
 }
 
 .contact p:first-child{
-    width: 680px;
-    height: 420px;
+    width: 57%;
+    height: 55%;
     background-color: #FABFBF;
+    z-index: -1;
 }
 
 .contact p:nth-child(2){
-    width: 515px;
-    height: 360px;
-    background-image:url(../img/ctbg.png);
-    margin-left: 100%;
-    transform: translateX(-520px);
-    margin-top: -25%;
+    width: 43%;
+    height: 47%;
+    background-image:url("../img/ctbg.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 57%;
+    top: 15%;
 }
 
 .contact p:nth-child(3){
-    width: 475px;
-    height: 340px;
+    width: 25%;
+    height: 45%;
     background-color: #888;
-    margin-left: 30%;
-    margin-top: -6%;
-    z-index: 2;
+    position: absolute;
+    left: 28%;
+    top: 45%;
+    z-index: -2;
 }
 
 .contact_pic{
-    width: 365px;
-    height: 445px;
-    background-image: url(../img/ctpic.png);
+    width: 30%;
+    height: 59%;
+    background-image: url("../img/ctpic.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
     position: absolute;
     top: 20%;
     left: 20%;
 }
 
 .contact_t{
-    width: 345px;
-    height: 425px;
+    width: 29%;
+    height: 58%;
     background-color: #4D4D4D;
     position: absolute;
     bottom: 6%;
@@ -51,14 +57,14 @@ main.contact{
     display: block;
     font-size: 20px;
     width: 80%;
-    margin: 30px auto;
+    margin: 15% auto;
     color: white;
 }
 /* contact main end */
 
 /* contact form */
 section{
-    width: 1440px;
+    /* width: 1440px; */
     height: 725px;
     margin: 0 auto 10px;
     /* border: 1px solid #000; */
@@ -66,24 +72,24 @@ section{
 }
 
 section p:first-child{
-    width: 340px;
-    height: 400px;
+    width: 30%;
+    height: 55%;
     background-color: #B1D6C7;
 }
 
 .contact_form{
-    width: 970px;
-    height: 540px;
+    width: 80%;
+    height: 75%;
     border: 5px solid #FABFBF;
     background-color: white;
     position: absolute;
     top: 15%;
-    left: 17%;
+    left: 10%;
 }
 
 section p:last-child{
-    width: 380px;
-    height: 400px;
+    width: 25%;
+    height: 45%;
     background-color: #FABFBF;
     position: absolute;
     right: 0;
@@ -104,8 +110,9 @@ section h3{
 .contact_form_text{
     font-size: 20px;
     width: 60%;
-    margin: 50px 150px;
+    margin: 5% 15%;
     box-sizing: border-box;
+    /* border: 1px solid #000; */
 }
 
 .contact_form_text span{
@@ -126,9 +133,9 @@ section h3{
     resize: none;
     font-size: 18px;
     outline: none;
-  }
+}
 
-  .contact_form_text input[type=submit]{
+.contact_form_text input[type=submit]{
     margin-left: 25%;
     margin-top: 10px;
     width: 50%;
@@ -138,11 +145,302 @@ section h3{
     line-height: 40px;
     border-radius: 10px;
     color: white;
-  }
+    cursor: pointer;
+}
+
+.contact_form_text input[type=submit]:hover{
+    box-shadow: 0 0 5px gray;
+    transform: scale(1.01);
+    transform-origin: center center;
+}
   
-  label{
+label{
     padding: 40px 12px 12px 0;
-  }
-  
+}
 
 /* contact form end */
+
+/* ----------media query------------ */
+@media (max-width: 575.98px){
+    /* contact main */
+    main.contact{
+        height: 750px;
+
+    }
+
+    .contact p:first-child{
+        width: 55%;
+        height: 35%;
+        
+    }
+
+    .contact p:nth-child(2){
+        width: 65%;
+        height: 25%;
+        left: 35%;
+        top: 12%;
+    }
+
+    .contact p:nth-child(3){
+        width: 70%;
+        height: 35%;
+
+        left: 8%;
+        top: 30%;
+    }
+
+    .contact_pic{
+        width: 68%;
+        height: 50%;
+        top: 6%;
+        left: 12%;
+    }
+
+    .contact_t{
+        width: 65%;
+        height: 37%;
+        line-height: 1.4;
+        bottom: 5%;
+        right: 11%;
+    }
+
+    .contact_t span{
+        font-size: 16px;
+        width: 80%;
+        margin: 7% auto;
+    }
+    /* contact main end */
+
+    /* contact form */
+    section{
+        height: 620px;
+        margin: 0 auto 10px;
+        /* border: 1px solid #000; */
+    }
+
+    section p:first-child{
+        width: 70%;
+        height: 55%;
+    }
+
+    .contact_form{
+        width: 85%;
+        height: 85%;
+
+        top: 8%;
+        left: 5%;
+    }
+
+    section p:last-child{
+        width: 65%;
+        height: 45%;
+        z-index: -1;
+    }
+
+    section h3{
+        font-size: 55px;
+        letter-spacing: 3px;
+        top: -8%;
+        left: 4%;
+    }
+
+    .contact_form_text{
+        font-size: 16px;
+        width: 85%;
+        margin: 8% 7%;
+        box-sizing: border-box;
+        /* border: 1px solid #000; */
+    }
+
+    .contact_form_text span{
+        margin-bottom: 15px;
+        /* border: 1px solid #000; */
+    }
+
+    .contact_form_text p{
+        margin-bottom: 50px;
+    }
+
+    .contact_form_text input[type=text], .contact_form_text textarea{
+        width: 88%;
+        font-size: 16px;
+    }
+
+    .contact_form_text input[type=submit]{
+        width: 50%;
+        font-size: 18px;
+        line-height: 40px;
+    }
+
+}
+  
+@media (min-width: 576px) and (max-width: 767.98px){
+    main.contact{
+        height: 600px;
+    }
+
+    .contact p:first-child{
+        width: 50%;
+        height: 40%;
+    }
+
+    .contact p:nth-child(2){
+        width: 50%;
+        height: 50%;
+        left: 50%;
+        top: 15%;
+    }
+
+    .contact p:nth-child(3){
+        width: 45%;
+        height: 60%;
+        left: 15%;
+        top: 30%;
+    }
+
+    .contact_pic{
+        width: 50%;
+        height: 65%;
+        top: 11%;
+        left: 8%;
+        /* display: none; */
+    }
+
+    .contact_t{
+        width: 37%;
+        height: 50%;
+        bottom: 17%;
+        right: 10%;
+    }
+
+    .contact_t span{
+        font-size: 18px;
+        width: 80%;
+        margin: 10% auto;
+        line-height: 1.2;
+    }
+    /* contact form */
+    section{
+        height: 650px;
+    }
+
+    section p:first-child{
+        width: 40%;
+        height: 45%;
+    }
+
+    .contact_form{
+        width: 80%;
+        height: 80%;
+        top: 10%;
+        left: 8%;
+    }
+
+    section p:last-child{
+        width: 21%;
+        height: 35%;
+    }
+
+    section h3{
+        font-size: 70px;
+        letter-spacing: 8px;
+        top: -9%;
+        left: 5%;
+    }
+
+    .contact_form_text{
+        font-size: 20px;
+        width: 85%;
+        margin: 7% 8%;
+
+    }
+
+    .contact_form_text input[type=text], .contact_form_text textarea{
+        width: 85%;
+        /* margin-bottom: 15px; */
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 991.98px){
+    /* contact main */
+    main.contact{
+        height: 700px;
+    }
+
+    .contact p:first-child{
+        width: 55%;
+        height: 45%;
+    }
+
+    .contact p:nth-child(2){
+        width: 45%;
+        height: 47%;
+        left: 55%;
+        top: 15%;
+    }
+
+    .contact p:nth-child(3){
+        width: 35%;
+        height: 40%;
+        left: 20%;
+        top: 48%;
+    }
+
+    .contact_pic{
+        width: 50%;
+        height: 70%;
+        top: 10%;
+        left: 10%;
+    }
+
+    .contact_t{
+        width: 36%;
+        height: 50%;
+        bottom: 8%;
+        right: 10%;
+    }
+
+    .contact_t span{
+        font-size: 18px;
+        width: 80%;
+        margin: 10% auto;
+    }
+}
+  
+  
+@media (min-width: 992px) and (max-width: 1199.98px){
+    main.contact{
+        height: 650px;
+    }
+    
+    .contact p:first-child{
+        width: 55%;
+    }
+    
+    .contact p:nth-child(2){
+        width: 45%;
+        height: 47%;
+        left: 55%;
+        top: 15%;
+    }
+    
+    .contact_t{
+        height: 55%;
+    }
+    
+    .contact_t span{
+        font-size: 18px;
+    }
+
+    section h3{
+        font-size: 80px;
+        letter-spacing: 10px;
+        font-weight: bold;
+        color: white;
+        text-shadow: 5px 5px 5px rgba(0, 0, 0, .3);
+        position: absolute;
+        top: -10%;
+        left: 20%;
+    }
+}
+  

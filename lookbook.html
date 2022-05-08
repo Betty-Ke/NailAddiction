@@ -57,14 +57,31 @@
                     </a>
                 </li>
                 <li class="bag">
-                    <a href="">
-                        <i class="fa fa-light fa-bag-shopping" ></i>
+                    <a href="shoplist.html" class="shopCar">
+                        <i class="fa fa-light fa-bag-shopping shopCarCon"></i>
                     </a>
                 </li>
             </ul>
     </header>
     <!-- header end -->
-
+    <!-- toggle -->
+    <div class="toggle">
+        <div class="toggle-in">
+            <div class="in t1">
+                <div class="t1-1"></div>
+                <div class="t1-2"></div>
+            </div>
+            <div class="in t2">
+                <div class="t2-1"></div>
+                <div class="t2-2"></div>
+            </div>
+            <div class="in t3">
+                <div class="t3-1"></div>
+                <div class="t3-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- toggle end -->
     <!-- lookbook top -->
     <section class="content_block lookbook_top">
         <ul class="share_pic">
@@ -98,48 +115,71 @@
             <h3>choose color</h3>
             <div class="choose">
                 <select id="category_btn" name="category_btn">
-                    <option value="Je">Jelly</option>
+                    <option value="je">Jelly</option>
                     <option value="ma">Matt</option>
                     <option value="ce">Cat-eye</option>
                 </select>
                 
-                <ul class="colors">
-                    <li class="color1"></li>
-                    <li class="color2"></li>
-                    <li class="color3"></li>
-                    <li class="color4"></li>
-                    <li class="color5"></li>
+                <ul class="colorbar colorbar3">
+                    <li class="color color1" id="jnail_cat3_1" data-pdt="pdtj1.png" data-name="Maroon_Jelly-J001" data-price="200" data-discount=""></li>
+                    <li class="color color2" id="jnail_cat3_2" data-pdt="pdtj2.png" data-name="Tiffany_Jelly-J018" data-price="200" data-discount=""></li>
+                    <li class="color color3" id="jnail_cat3_3" data-pdt="pdtj3.png" data-name="Skyblue_Jelly-J025" data-price="200" data-discount="180"></li>
+                    <li class="color color4" id="jnail_cat3_4" data-pdt="pdtj4.png" data-name="Purple_Jelly-J023" data-price="200" data-discount=""></li>
+                    <li class="color color5" id="jnail_cat3_5" data-pdt="pdtj5.png" data-name="Gray_Jelly-J032" data-price="280" data-discount=""></li>
+                </ul>
+                <ul class="colorbar colorbar2 color_none">
+                    <li class="color color1" id="jnail_cat3_1" data-pdt="pdtm1.png"></li>
+                    <li class="color color2" id="jnail_cat3_2" data-pdt="pdtm2.png"></li>
+                    <li class="color color3" id="jnail_cat3_3" data-pdt="pdtm3.png"></li>
+                    <li class="color color4" id="jnail_cat3_4" data-pdt="pdtm4.png"></li>
+                    <li class="color color5" id="jnail_cat3_5" data-pdt="pdtm5.png"></li>
+                </ul>
+                <ul class="colorbar colorbar4 color_none">
+                    <li class="color color1" id="jnail_cat3_1" data-pdt="pdtc1.png"></li>
+                    <li class="color color2" id="jnail_cat3_2" data-pdt="pdtc2.png"></li>
+                    <li class="color color3" id="jnail_cat3_3" data-pdt="pdtc3.png"></li>
+                    <li class="color color4" id="jnail_cat3_4" data-pdt="pdtc4.png"></li>
+                    <li class="color color5" id="jnail_cat3_5" data-pdt="pdtc5.png"></li>
                 </ul>
             </div>
             <div class="changecolor">
                 <h2>Try It On</h2>
                 
                 <div class="handpic">
-                    <div class="nail1"></div>
-                    <div class="nail2"></div>
-                    <div class="nail3"></div>
-                    <div class="nail4"></div>
-                    <div class="nail5"></div>
+                    <img src="img/o_hand.jpg" alt="">
+                
+                    <!-- <ul class="nails">
+                        <li class="nail1"></li>
+                        <li class="nail2"></li>
+                        <li class="nail3"></li>
+                        <li class="nail4"></li>
+                        <li class="nail5"></li>
+                    </ul> -->
                 </div>
+                <div class="handpic jnail" id="jnail_cat3_1_i"><img src="img/jnail1.png" alt=""></div>
+                <div class="handpic jnail" id="jnail_cat3_2_i"><img src="img/jnail2.png" alt=""></div>
+                <div class="handpic jnail" id="jnail_cat3_3_i"><img src="img/jnail3.png" alt=""></div>
+                <div class="handpic jnail" id="jnail_cat3_4_i"><img src="img/jnail4.png" alt=""></div>
+                <div class="handpic jnail" id="jnail_cat3_5_i"><img src="img/jnail5.png" alt=""></div>
+                <!-- <div class="handpic jnail" id="jnail_cat2_1_i"><img src="img/about_top3.png" alt=""></div> -->
 
                 
                 <div class="lookbook_product">
                     <a href="product_d.html">
                         <img src="img/pdtj1.png" alt="">
                         <h4>Maroon Jelly - J001</h4>
-                        <p>$200</p>
-                        <span></span>
-                    
+                        <p>$200</p> 
+                        <span></span>                
                     </a>
             
                     <ol class="btn-numbox">
                         <li><span  id="numcut" class="numcut">-</span></li>
-                        <li><input type="text" class="input-num" id="inputnum" value="1"/></li>
+                        <li><input type="text" class="input-num" id="inputnum" value="1"></li>
                         <li><span id="numplus" class="numplus">+</span></li>
             　　　  </ol>
-                    <button>Buy</button>
+                    <button type="submit" class="btn_buy">Buy</button>
                 </div>
-            
+            </div>
 
 
         </main>
@@ -200,6 +240,9 @@
     </footer>
 
     <!-- footer end -->
-    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+    <!-- <script src="js/index.js"></script> -->
+    <!-- <script src="js/product_d.js"></script> -->
+    <script src="js/changecolor.js"></script>
 </body>
 </html>

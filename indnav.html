@@ -3,22 +3,225 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>指癮</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="css/nav_footer.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>指癮 | HOME</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">   
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/index copy.css">
+    
 </head>
 <body>
     <!-- header start -->
-        <header class="content_block">
-            <!-- logo -->
-            <div class="logo">
-                <a href="index.html">
-                    <img src="img/logo.svg">
-                </a>
+    <header class="content_block">
+        <!-- logo -->
+        <div class="logo">
+            <a href="index.html">
+                <img src="img/logo.svg">
+            </a>
+        </div>
+        <!-- nav -->
+            <ul class="nav">
+                <li>
+                    <a href="story.html">STORY</a>
+                </li>
+                <li>
+                    <a href="news.html">NEWS</a>
+                </li>
+                <li>
+                    <a href="product.html">PRODUCT</a>
+                </li>
+                <li>
+                    <a href="lookbook.html">LOOKBOOK</a>
+                </li>
+            </ul>
+            <!-- right nav -->
+            <ul class="nav_right">
+                <li class="search_box">
+                    <input type="text" class="search_box" placeholder="search" style="display: none;">
+                </li>
+                <li class="search">
+                    <a href="">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </a>
+                </li>
+                <li class="user">
+                    <a href="">
+                        <i class="fa-solid fa-user-large"></i>
+                    </a>
+                </li>
+                <li class="contact">
+                    <a href="contact.html">
+                        <i class="fa-regular fa-comment"></i>
+                    </a>
+                </li>
+                <li class="bag">
+                    <a href="shoplist.html">
+                        <i class="fa fa-light fa-bag-shopping" ></i>
+                    </a>
+                </li>
+            </ul>
+    </header>
+
+    <!-- header end -->
+
+    <!-- main start -->
+    <main class="kv">
+        <div class="content_block wrapper">
+            <ul class="slider_btns">
+                <li class="prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </li>
+                <li class="dots">
+                    <div class="dot dot_now"  data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                </li>
+                <li class="next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+
+
+    <!-- main end -->
+        <ul class="fix_aside">
+            <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-line"></i></a></li>
+            <li><a href="contact.html"><i class="fa-regular fa-comment"></i></a></li>
+        </ul>
+    <!-- news start -->
+    <section class="content_block">
+        <h3>NEWS</h3>
+        <div class="news_box">
+            <ul>
+                <li>
+                    <p>2022.05.01</p>
+                    <a href="#">不限金額全館免運</a>
+                </li>
+                <li>
+                    <p>2022.04.18</p>
+                    <a href="#">夏季新品上市</a>
+                </li>
+                <li>
+                    <p>2022.03.01</p>
+                    <a href="#">果凍系列3件79折</a>
+                </li>
+            </ul>
+            <a href="news.html">ALL NEWS</a>
+            <div class="news_side">INFORMATION&EVENT</div>
+        </div>
+    </section>
+    <!-- news end -->
+
+    <!-- category start -->
+    <div class="content_block cat_outer">
+        <div class="cat1">
+            <div class="cat_box  cat_box_t">
+                <h3>CAT</h3>
+                <h4>EGO</h4>
+                <h5>RY</h5>
             </div>
-            <!-- nav -->
-                <ul class="nav">
+            <div class="cat_box cat_box_b"></div>
+        </div>
+        <a class="cat2" href="product.html?target=3">
+            <div class="cat_box">
+                <img src="img/cat-j.jpg" alt="">
+            </div>
+            <div class="cat_box cat_box_tact">
+                <h2>果凍系列</h2>
+                <span>JELLY</span>
+                <p></p>
+            </div>
+        </a>
+        <a class="cat3" href="product.html?target=2">
+            <div class="cat_box catbox_tact">
+                <h2>霧面系列</h2>
+                <span>MATT</span>
+            </div>
+            <div class="cat_box cat_box_iact">
+                <img src="img/cat-m.jpg" alt="">
+            </div>
+        </a>
+        <a class="cat4" href="product.html?target=4">
+            <div class="cat_box cat_box_tact">
+                <h2>貓眼系列</h2>
+                <span>CAT-EYE</span>
+            </div>
+            <div class="cat_box cat_box_iact">
+                <img src="img/cat-c.jpg" alt="">
+            </div>
+        </a>
+
+    </div>
+    <!-- category end -->
+
+    <!-- article start -->
+    <article class="content_block">
+        <div class="atc_textbox">
+            <h4>SUMMER STYLE</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aspernatur accusantium porro doloremque explicabo quisquam! Ullam commodi architecto minima aliquam?</p>
+            <a href="#">DETAILS</a>
+        </div>
+        <div class="atc_img">
+            <img src="img/article.jpg" alt="">    
+        </div>
+    </article>
+    <!-- article end -->
+    <!-- last_block start -->
+    <div class="last_block">
+        <ul class="last_left">
+            <li class="ll_top">
+                <img src="img/ig1.jpg" alt="">
+            </li>
+            <li class="ll_bot">
+                <img src="img/ig2.png" alt="">
+                <img src="img/ig3.jpg" alt="">
+            </li>
+        </ul>
+
+        <ul class="last_center">
+            <li class="lc_top">
+                <img src="img/ig4.png" alt="">
+                <img src="img/ig5.jpg" alt="">
+                <img src="img/ig6.jpg" alt="">
+            </li>
+            <li class="lc_bot">
+                <div>
+                    <i class="fa-brands fa-instagram"></i>
+                    <p># Follow us</p>
+                </div>
+                <img src="img/ig7.jpg" alt="">
+            </li>
+        </ul>
+
+        <ul class="last_right">
+            <li class="lr_top">
+                <span>All your own</span>
+            </li>
+            <li class="lr_bot">
+                <img src="img/ig8.jpg" alt="">
+                <img src="img/ig9.jpg" alt="">
+            </li>
+        </ul>
+    </div>
+    <!-- last_block end -->
+    <!-- gototop -->
+    <div class="gototop">
+        <a href="#">
+            <h4>Top</h4>
+        </a>
+    </div>
+    <!-- footer start -->
+    <footer class="content_block">
+        <div class="foot">
+            <div class="rfoot">
+                <ul class="rfoot_top">
                     <li>
                         <a href="story.html">STORY</a>
                     </li>
@@ -32,34 +235,37 @@
                         <a href="lookbook.html">LOOKBOOK</a>
                     </li>
                 </ul>
-                <!-- right nav -->
-                <ul class="nav_right">
-                    <li class="search_box">
-                        <input type="text" class="search_box" placeholder="search" style="display: none;">
+                <ul class="rfoot_bot">
+                    <li>
+                        <a href="member.html">MEMBER</a>
                     </li>
-                    <li class="search">
-                        <a href="">
-                            <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
-                    </li>
-                    <li class="user">
-                        <a href="">
-                            <i class="fa-solid fa-user-large"></i>
-                        </a>
-                    </li>
-                    <li class="contact">
-                        <a href="">
-                            <i class="fa-regular fa-comment"></i>
-                        </a>
-                    </li>
-                    <li class="bag">
-                        <a href="">
-                            <i class="fa fa-light fa-bag-shopping" ></i>
-                        </a>
+                    <li>
+                        <a href="contact.html">CONTACT</a>
                     </li>
                 </ul>
-        </header>
-        <!-- header end -->
+            </div>
+            <div class="lfoot">
+                <ul class="lfoot_top">
+                    <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-line"></i></a></li>
+                </ul>
+                <div class="lfoot_bot">
+                    <i class="fa-regular fa-copyright"></i><span>2022   All Rights Reserved</span>
+                </div>
+            </div>
+        </div>
+        <div class="content_block">
+            <span>
+                本網站為緯育TibaMe前端設計工程師班第76期學員專題作品，本平台僅供學習、展示之用。
+            </span>
+        </div>
+    </footer>
+
+    <!-- footer end -->
+
+    <script src="js/index.js"></script>
     
+
 </body>
 </html>

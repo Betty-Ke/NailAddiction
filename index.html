@@ -58,37 +58,57 @@
                     </a>
                 </li>
                 <li class="bag">
-                    <a href="">
-                        <i class="fa fa-light fa-bag-shopping" ></i>
+                    <a href="shoplist.html" class="shopCar">
+                        <i class="fa fa-light fa-bag-shopping shopCarCon"></i>
                     </a>
                 </li>
             </ul>
     </header>
     <!-- header end -->
-
-    <!-- main start -->
-    <main>
-        <div class="main_slider">
-            <div class="main_kv kv1"></div>
-            <div class="main_kv kv2"></div>
-            <div class="main_kv kv3"></div>
-            <div class="content_block slider_btn">
-                <a href="#" class="prev">
-                    <i class="fa-solid fa-angle-left"></i>
-                </a>
-                <a href="#" class="next">
-                    <i class="fa-solid fa-angle-right"></i>
-                </a>
+    <!-- toggle -->
+    <div class="toggle">
+        <div class="toggle-in">
+            <div class="in t1">
+                <div class="t1-1"></div>
+                <div class="t1-2"></div>
             </div>
-            <div class="dots">
-                <a href="#" class="dot dot_now" data-index="1"></a>
-                <a href="#" class="dot" data-index="2"></a>
-                <a href="#" class="dot" data-index="3"></a>
+            <div class="in t2">
+                <div class="t2-1"></div>
+                <div class="t2-2"></div>
+            </div>
+            <div class="in t3">
+                <div class="t3-1"></div>
+                <div class="t3-2"></div>
             </div>
         </div>
+    </div>
+    <!-- toggle end -->
+
+    <!-- main start -->
+    <main class="kv" data-img="">
+        <!-- <div class="content_block wrapper"> -->
+            <ul class="slider_btns">
+                <li class="prev">
+                    <i class="fa-solid fa-angle-left"></i>
+                </li>
+                <li class="dots">
+                    <div class="dot dot_now" data-index="1"></div>
+                    <div class="dot" data-index="2"></div>
+                    <div class="dot" data-index="3"></div>
+                </li>
+                <li class="next">
+                    <i class="fa-solid fa-angle-right"></i>
+                </li>
+            </ul>
+        <!-- </div> -->
     </main>
     <!-- main end -->
-
+    <ul class="fix_aside">
+        <li><a href="#"><i class="as_icon fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="as_icon fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="as_icon fa-brands fa-line"></i></a></li>
+        <li><a href="contact.html"><i class="as_icon fa-regular fa-comment"></i></a></li>
+    </ul>
     <!-- news start -->
     <section class="content_block">
         <h3>NEWS</h3>
@@ -134,7 +154,7 @@
             </div>
         </a>
         <a class="cat3" href="product.html?target=2">
-            <div class="cat_box catbox_tact">
+            <div class="cat_box cat_box_tact">
                 <h2>霧面系列</h2>
                 <span>MATT</span>
             </div>
@@ -159,7 +179,8 @@
     <article class="content_block">
         <div class="atc_textbox">
             <h4>SUMMER STYLE</h4>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla aspernatur accusantium porro doloremque explicabo quisquam! Ullam commodi architecto minima aliquam?</p>
+            <p>2022 夏日指彩3大提案，讓指尖繽紛閃耀整個夏天，晶透質感果凍、粉嫩漸層暈染、晶亮星空貓眼，今年夏天必收的小清新款式，炎炎夏日營造出清凉淡雅的視覺感
+            </p>
             <a href="#">DETAILS</a>
         </div>
         <div class="atc_img">
@@ -168,7 +189,7 @@
     </article>
     <!-- article end -->
     <!-- last_block start -->
-    <div class="last_block">
+    <div class="content block last_block">
         <ul class="last_left">
             <li class="ll_top">
                 <img src="img/ig1.jpg" alt="">
@@ -257,7 +278,11 @@
     </footer>
 
     <!-- footer end -->
-
+    <script>
+        
+        
+    </script>
+    <script src="js/common.js"></script>
     <script src="js/index.js"></script>
     
 

@@ -57,13 +57,31 @@
                     </a>
                 </li>
                 <li class="bag">
-                    <a href="">
-                        <i class="fa fa-light fa-bag-shopping" ></i>
+                    <a href="shoplist.html" class="shopCar">
+                        <i class="fa fa-light fa-bag-shopping shopCarCon"></i>
                     </a>
                 </li>
             </ul>
     </header>
     <!-- header end -->
+    <!-- toggle -->
+    <div class="toggle">
+        <div class="toggle-in">
+            <div class="in t1">
+                <div class="t1-1"></div>
+                <div class="t1-2"></div>
+            </div>
+            <div class="in t2">
+                <div class="t2-1"></div>
+                <div class="t2-2"></div>
+            </div>
+            <div class="in t3">
+                <div class="t3-1"></div>
+                <div class="t3-2"></div>
+            </div>
+        </div>
+    </div>
+    <!-- toggle end -->
 
     <!-- product nav -->
     <nav class="content_block pdt_nav">
@@ -88,12 +106,17 @@
         </ul>
     </nav>
     <!-- product nav end -->
-
+    <ul class="fix_aside">
+        <li><a href="#"><i class="as_icon fa-brands fa-facebook-f"></i></a></li>
+        <li><a href="#"><i class="as_icon fa-brands fa-instagram"></i></a></li>
+        <li><a href="#"><i class="as_icon fa-brands fa-line"></i></a></li>
+        <li><a href="contact.html"><i class="as_icon fa-regular fa-comment"></i></a></li>
+    </ul>
     <!-- Product item start -->
     <main class="content_block pdt_main">
         <div class="pdtitem_container">
             <ul>
-                <li><img src="img/pdtj2.png" alt=""></li>
+                <li><img src="img/pdtj2.png" alt="" class="pdt_img"></li>
                 <li>
                     <div class="text_box">
                         <h4>Tiffany Jelly - J018</h4>
@@ -112,8 +135,8 @@
                         <li><span id="numplus" class="numplus">+</span></li>
             　　　  </ol>
                     <div class="btn_box">
-                        <button>Buy</button>
-                        <button>Try</button>
+                        <button class="btn_buy">Buy</button>
+                        <button class="btn_try">Try</button>
                     </div>
                 </li>
             </ul>
@@ -174,8 +197,8 @@
     </footer>
 
     <!-- footer end -->
-
-    <script src="js/index.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/product_d.js"></script>
 
 </body>
 </html>

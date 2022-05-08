@@ -8,8 +8,7 @@
 
 /* lookbook top */
 .share_pic{
-    width: 1200px;
-    height: 442px;
+    height: 35vw;
     display: flex;
     margin: 0 auto;
 }
@@ -17,9 +16,13 @@
 .share_pic li{
     background-size: cover;
     background-position: center center;
-    transition: .5s;
+    /* transition: .5s; */
     margin: 5px;
     border-radius: 10px;
+}
+
+.-block{
+    background-color: white;
 }
 
 .share_pic .pic1{
@@ -28,17 +31,17 @@
 }
 
 .share_pic .pic2{
-    background-image: url(../img/look2.png);
+    background-image: url('../img/look2.png');
     flex-grow: 2;
 }
 
 .share_pic .pic3{
-    background-image: url(../img/look3.png);
+    background-image: url('../img/look3.png');
     flex-grow: 1;
 }
 
 .share_pic .pic4{
-    background-image: url(../img/look4.png);
+    background-image: url('../img/look4.png');
     flex-grow: 2;
 }
 .share_pic li:hover{
@@ -47,27 +50,11 @@
 
 /* lookbook top end */
 /* lookbook content */
-.breadcrumbs{
-    width: 30%;
-    display: flex;
-    align-items: center;
-    margin: 25px 0;
-}
-
-.breadcrumbs li{
-    /* border: 1px solid #000; */
-    margin-right: 10px;
-}
-
-.breadcrumbs a:hover{
-    color: #FABFBF;
-}
 
 /* lookbook main */
 main.tryit{
-    height: 1020px;
+    height: 75vw;
     /* border: 1px solid #000; */
-    
 }
 
 main.tryit::before{
@@ -75,11 +62,21 @@ main.tryit::before{
     display: block;
     width: 50%;
     height: 10%;
-    background-image: url(../img/slash_bg.png);
+    background-image: url('../img/slash_bg.png');
     background-repeat: repeat-x;
     margin-left: 15%;
     transform-origin: top;
     transform: rotate(-10deg);
+}
+
+main.tryit::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 10%;
+    margin-top: -5%;
+    transform: rotate(20deg);
+    background-image: url('../img/slash_bg.png');
 } 
 
 main.tryit h3{
@@ -89,38 +86,58 @@ main.tryit h3{
 }
 
 .choose{
-    width: 60%;
+    width: 50%;
     display: flex;
     /* border: 1px solid #000; */
     justify-content: center;
-    margin: 20px 150px;
+    margin: 20px 15%;
 }
 
 #category_btn{
-    width: 25%;
+    width: 35%;
     padding: 16px 20px;
-    font-size: 24px;
+    font-size: 22px;
+    text-align: center;
     letter-spacing: 10px;
     border: 1px solid #FABFBF;
     border-radius: 10px;
     flex-grow: 1;
+    cursor: pointer;
   }
 
-.colors{
-    width: 40%;
+.colorbar{
+    /* width: 40%; */
     flex-grow: 3;
     display: flex;
     justify-content: space-around;
 }
 
-.colors li{
+.color_none{
+    display: none;
+}
+
+.colorbar li{
     border-radius: 50%;
     cursor: pointer;
     width: 50px;
     height: 50px;
     /* border: 1px solid #000; */
     margin: 10px;
-    background-image: url(../img/colorsj.png);
+    background-image: url('../img/colorsj.png');
+    
+    
+}
+
+.colorbar2 li{
+    background-image: url("../img/colorsm.png");
+}
+
+.colorbar4 li{
+    background-image: url("../img/colorsc.png");
+}
+
+.colorbar li.-on{
+    box-shadow: 5px 5px 10px rgba(255, 191, 191, .9);
 }
 
 .color1{background-position: 0, 0;}
@@ -132,10 +149,9 @@ main.tryit h3{
 .changecolor{
     /* border: 1px solid red; */
     width: 100%;
-    height: 60%;
+    height: 70%;
     margin-top: 40px;
-    display: inline-flex;
-    /* background-color: #e5e5e5; */
+    display: flex;
 }
 
 .changecolor h2{
@@ -150,30 +166,29 @@ main.tryit h3{
 
 .handpic{
     /* border: 1px solid #000; */
-    width: 60%;
-    background-image: url(../img/o_hand.jpg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center bottom; 
     margin-right: 60px;
 }
 
-.handpic::after{
-    content: "";
-    display: block;
-    width: 120%;
-    height: 30%;
-    margin-left: -30%;
-    margin-top: 70%;
-    transform: rotate(20deg);
-    background-image: url(../img/slash_bg.png);
-} 
+.handpic img{
+    height: 100%;
+    max-width: none;
+}
+
+.handpic.jnail{
+    display: none;
+}
 
 .lookbook_product{
     border: 1px solid #FABFBF;
-    width: 350px;
-    height: 450px;
+    width: 30%;
+    /* height: 75%; */
+    align-self: start;
     font-size: 20px;
+}
+
+.lookbook_product:hover{
+    box-shadow: 5px 5px 10px rgba(250, 191, 191, .8);
+    transform: translate(-5px, -5px);
 }
 
 .lookbook_product img{
@@ -182,11 +197,18 @@ main.tryit h3{
 }
 
 .btn-numbox{
-    width: 50%;
-    margin: 10px auto;
-    /* border: 1px solid #000; */
-    display: flex;
-    justify-content: space-between;
+    width: 100px;
+    /* border: 1px solid blue; */
+    margin: 0 auto;
+}
+.btn-numbox::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.btn-numbox li{
+    float: left;
 }
 
 .btn-numbox span:hover{
@@ -195,22 +217,21 @@ main.tryit h3{
 }
 
 .numcut, .input-num, .numplus{
-    display: inline-block;
-    width: 50px;
+    display: block;
+    width: 30px;
     font-size: 30px;
     text-align: center;
-    line-height: 30px;
+    line-height: 35px;
     /* border: 1px solid red; */
 }
 
-.btn_box{
-    /* border: 1px solid #000; */
-    width: 90%;
-    margin: 20px auto;
+.input-num{
+    font-size: 22px;
+    line-height: 33px;
 }
 
 .lookbook_product button{
-    display: inline-block;
+    display: block;
     background-color: #FABFBF;
     border-radius: 5px;
     width: 80%;
@@ -219,8 +240,563 @@ main.tryit h3{
     font-size: 24px;
     letter-spacing: 3px;
     color: white;
-    margin: 10px 30px;
+    margin: 10px auto;
+    cursor: pointer;
 }
 
-/*  */
+.lookbook_product button:hover{
+    box-shadow: 0 0 5px gray;
+    transform: scale(1.01);
+    transform-origin: center center;
+}
+
 /* lookbook main end */
+
+/* ---------media query----------- */
+@media (max-width: 575.98px){
+    /* lookbook top */
+
+    .share_pic{
+        overflow: hidden;
+        display: flex;
+        margin: 0 auto;
+    }
+
+    .share_pic li{
+        background-size: cover;
+        background-position: center center;
+        /* transition: .5s; */
+        margin: 5px;
+        /* transform: translate3d(0px, 0px, 0px); */
+        /* transform: translate3d(-220px, 0px, 0px); */
+        /* transform: translate3d(400px, 0px, 0px); */
+    }
+
+    .share_pic .pic1, .share_pic .pic2, .share_pic .pic3, .share_pic .pic4{
+        /* flex-grow: initial; */
+        width: 145px;
+        flex-shrink: 0;
+    }
+
+    .share_pic .pic1{
+        flex-grow: 5;
+        /* transform: translate3d(-150px, 0px, 0px); */
+        /* transform: translate3d(400px, 0px, 0px); */
+        /* transform: translate3d(260px, 0px, 0px); */
+    }
+
+    
+    .share_pic .pic4{
+        /* display: none; */
+    }
+
+    
+
+
+
+    main.tryit::before{
+        width: 60%;
+    }
+    
+    main.tryit::after{
+        width: 60%;
+        /* margin-top: 0; */
+    }
+
+    main.tryit{
+        width: 95%;
+        height: 400px;
+    }
+
+    main.tryit h3{
+        font-size: 35px;
+        margin-top: -8%;
+        margin-left: 20%;
+    }
+    
+    .choose{
+        width: 90%;
+        /* border: 1px solid #000; */
+        margin: 0px auto;
+    }
+    
+    #category_btn{
+        width: 25%;
+        line-height: 0;
+        padding: 0px 0px;
+        font-size: .8em;
+      }
+    
+    .colorbar li{
+        width: 25px;
+        height: 25px;
+        /* border: 1px solid #000; */
+        margin: 10px;
+    }
+    
+    .changecolor{
+        /* border: 1px solid red; */
+        height: 70%;
+        margin-top: 10px;
+        justify-content: space-around;
+    
+        flex-wrap: wrap;
+    }
+    
+    .changecolor h2{
+        /* border: 1px solid #000; */
+        font-size: 30px;
+        text-align: center;
+        letter-spacing: 15px;
+        line-height: 1.6;
+        font-weight: bold;
+        color: #B1D6C7;
+        writing-mode: horizontal-tb;
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    .handpic{
+        /* border: 1px solid #000; */
+        margin-right: 0px;
+        margin: 5px 5px;
+        width: 60%;
+    }
+    
+    .handpic img{
+        height: auto;
+        max-width: 100%;
+        /* margin: 0 auto; */
+    }
+
+
+    
+    .lookbook_product{
+        border: 1px solid #FABFBF;
+        width: 30%;
+        font-size: 12px;
+        line-height: 0;
+        margin: 5px 0px;
+        
+    }
+    
+    .lookbook_product img{
+        max-width: 35%;
+        margin: 10px auto;
+    }
+
+    .lookbook_product h4{
+        line-height: 16px ;
+    }
+
+    .lookbook_product p{
+        line-height: 20px ;
+    }
+
+    .btn-numbox{
+        width: 66px;
+    }
+
+    .numcut, .input-num, .numplus{
+        width: 16px;
+        font-size: 16px;
+        line-height: 25px;
+    }
+
+    .input-num{
+        font-size: 12px;
+        line-height: 10px;
+    }
+     
+    .lookbook_product button{
+        width: 80%;
+        height: 30px;
+        font-size: 16px;
+        margin: 5px auto;
+    }
+}
+  
+@media (min-width: 576px) and (max-width: 767.98px){
+    .share_pic li{
+        transition: .5s;
+    }
+    
+    main.tryit::before{
+        width: 60%;
+    }
+    
+    main.tryit::after{
+        width: 60%;
+        margin-top: -10%;
+    }
+
+    main.tryit{
+        height: 600px;
+    }
+
+    main.tryit h3{
+        font-size: 50px;
+        margin-top: -8%;
+        margin-left: 25%;
+    }
+    
+    .choose{
+        width: 90%;
+        margin: 0px auto;
+    }
+    
+    #category_btn{
+        width: 30%;
+        line-height: 0;
+        padding: 0px 0px;
+        font-size: 1.2em;
+      }
+    
+    .colorbar li{
+        width: 35px;
+        height: 35px;
+    }
+    
+    .changecolor{
+        height: auto;
+        margin-top: 10px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
+    .changecolor h2{
+        /* border: 1px solid #000; */
+        font-size: 35px;
+        text-align: center;
+        letter-spacing: 15px;
+        line-height: 1.6;
+        font-weight: bold;
+        color: #B1D6C7;
+        writing-mode: horizontal-tb;
+        margin-right: 0px;
+        width: 100%;
+    }
+    
+    .handpic{
+        /* border: 1px solid #000; */
+        margin-right: 0px;
+        margin: 5px 5px;
+        width: 55%;
+    }
+    
+    .handpic img{
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .lookbook_product{
+        width: 30%;
+        font-size: 16px;
+        margin: 5px 10px;
+        
+    }
+    
+    .lookbook_product img{
+        max-width: 40%;
+        margin: 10px auto;
+    }
+
+    .lookbook_product h4{
+        line-height: 20px ;
+    }
+
+    .btn-numbox{
+        width: 70px;
+    }
+
+    .numcut, .input-num, .numplus{
+        width: 20px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+     
+    .lookbook_product button{
+        width: 80%;
+        height: 30px;
+        font-size: 16px;
+    }
+
+}
+  
+@media (min-width: 768px) and (max-width: 991.98px){
+    .share_pic li{
+        transition: .5s;
+    }
+
+    main.tryit::after{
+        margin-top: -10%;
+    }
+
+    main.tryit{
+        height: 700px;
+    }
+
+    main.tryit h3{
+        font-size: 50px;
+        margin-top: -8%;
+        margin-left: 30%;
+    }
+    
+    .choose{
+        width: 70%;
+        margin: 0px auto;
+    }
+    
+    #category_btn{
+        width: 30%;
+        font-size: 18px;
+    }
+    
+    .colorbar li{
+        width: 40px;
+        height: 40px;
+        margin: 10px 5px;
+    }
+    
+    .changecolor{
+        height: auto;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    
+    .changecolor h2{
+        font-size: 60px;
+        margin-top: 3%;
+        margin-right: 0px;
+    }
+    
+    .handpic{
+        margin-right: 0px;
+        margin: 5px 5px;
+        width: 50%;
+    }
+    
+    .handpic img{
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .lookbook_product{
+        width: 30%;
+        font-size: 20px;
+        margin: 5px 5px;
+    }
+    
+    .lookbook_product img{
+        max-width: 35%;
+        margin: 10px auto;
+    }
+
+    .lookbook_product h4{
+        line-height: 30px ;
+    }
+
+    .btn-numbox{
+        width: 70px;
+        margin: 10px auto;
+    }
+
+    .numcut, .input-num, .numplus{
+        width: 20px;
+        font-size: 20px;
+        line-height: 25px;
+    }
+     
+    .lookbook_product button{
+        width: 80%;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+  
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .share_pic li{
+        transition: .5s;
+    }
+
+    main.tryit::after{
+        margin-top: -10%;
+    }
+
+    main.tryit{
+        height: 700px;
+    }
+
+    main.tryit h3{
+        font-size: 70px;
+        margin-top: -8%;
+        margin-left: 30%;
+    }
+    
+    .choose{
+        width: 60%;
+        margin: 0px 15%;
+    }
+    
+    #category_btn{
+        width: 30%;
+    }
+    
+    .colorbar li{
+        width: 45px;
+        height: 45px;
+        margin: 10px 5px;
+    }
+    
+    .changecolor{
+        height: auto;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    
+    .changecolor h2{
+        font-size: 70px;
+        margin-top: 3%;
+        margin-right: 0px;
+    }
+    
+    .handpic{
+        margin-right: 0px;
+        margin: 5px 5px;
+        width: 45%;
+    }
+    
+    .handpic img{
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .lookbook_product{
+        width: 25%;
+        font-size: 20px;
+        margin: 5px 30px;
+    }
+    
+    .lookbook_product img{
+        max-width: 35%;
+        margin: 10px auto;
+    }
+
+    .lookbook_product h4{
+        line-height: 30px ;
+    }
+
+    .btn-numbox{
+        width: 100px;
+        margin: 10px auto;
+    }
+
+    .numcut, .input-num, .numplus{
+        width: 30px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+     
+    .lookbook_product button{
+        width: 80%;
+        height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399.98px){
+    .share_pic li{
+        transition: .5s;
+    }
+}
+
+
+@media (min-width: 1400px){
+    .share_pic li{
+        transition: .5s;
+    }
+
+    main.tryit::after{
+        margin-top: -10%;
+    }
+
+    main.tryit{
+        height: 700px;
+    }
+
+    main.tryit h3{
+        font-size: 70px;
+        margin-top: -8%;
+        margin-left: 30%;
+    }
+    
+    .choose{
+        width: 60%;
+        margin: 0px 15%;
+    }
+    
+    #category_btn{
+        width: 25%;
+    }
+    
+    .colorbar li{
+        width: 45px;
+        height: 45px;
+        margin: 10px 5px;
+    }
+    
+    .changecolor{
+        height: auto;
+        margin-top: 10px;
+        justify-content: space-between;
+    }
+    
+    .changecolor h2{
+        font-size: 70px;
+        margin-top: 3%;
+        margin-right: 0px;
+    }
+    
+    .handpic{
+        margin-right: 0px;
+        margin: 5px 5px;
+        width: 45%;
+    }
+    
+    .handpic img{
+        height: auto;
+        max-width: 100%;
+    }
+    
+    .lookbook_product{
+        width: 25%;
+        font-size: 20px;
+        margin: 5px 30px;
+    }
+    
+    .lookbook_product img{
+        max-width: 35%;
+        margin: 10px auto;
+    }
+
+    .lookbook_product h4{
+        line-height: 30px ;
+    }
+
+    .btn-numbox{
+        width: 100px;
+        margin: 10px auto;
+    }
+
+    .numcut, .input-num, .numplus{
+        width: 30px;
+        font-size: 25px;
+        line-height: 30px;
+    }
+     
+    .lookbook_product button{
+        width: 80%;
+        height: 40px;
+        font-size: 20px;
+    }
+  }

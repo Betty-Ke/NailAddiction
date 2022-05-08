@@ -9,65 +9,59 @@
 /* about top */
 .about_top{
     /* border: 1px solid #000; */
-    height: 600px;
+    width: 100%;
+    padding-top: calc(100% * 2 / 5);
     position: relative;
 }
 
 .ab_top_left{
-    width: 320px;
-    height: 500px;
+    width: 18%;
+    height: 80%;
     background-color: #FABFBF;
     position: absolute;
-    left: -150px;
+    top: 0;
+    left: 0;
 }
 
 .about_top span{
     /* border: 1px solid red; */
     font-size: 60px;
-    letter-spacing: 10px;
+    letter-spacing: 8px;
     position: absolute;
     top: 50%;
-    left: 50px;
+    left: 8%;
 }
 
 .ab_top_ibox{
-    width: 950px;
-    height: 500px;
+    width: 60%;
     position: absolute;
+    /* border: 1px solid #000; */
     bottom: 0;
-    right: -185px;
+    right: 0;
 }
 /* about top end */
 /* about content */
-.breadcrumbs{
-    width: 30%;
-    display: flex;
-    align-items: center;
-    margin: 25px 0;
-}
-
-.breadcrumbs li{
-    /* border: 1px solid #000; */
-    margin-right: 10px;
-}
-
-.breadcrumbs a:hover{
-    color: #FABFBF;
-}
-
 .about_bot{
     /* border: 1px solid #000; */
-    height: 1440px;
+    /* height: 1440px; */
+    height: 0;
+    padding-top: 115%;
     position: relative;
-    
+}
+
+.breadcrumbs{
+    margin-left: 5%;
 }
 
 .ab_bot_top{
-    width: 480px;
-    height: 455px;
+    width: 40%;
+    height: 0;
+    padding-top: 40%;
     background-color: #B1D6C7;
     position: absolute;
-    left: -150px;
+    top: 0;
+    left: -10%;
+    /* border: 1px solid #000; */
 }
 
 .ab_bot_text{
@@ -75,7 +69,7 @@
     height: 550px;
     background-color: #FABFBF;
     position: absolute;
-    right: 50px;
+    right: 5%;
     top: 30%;
     color: white;
     z-index: 3;
@@ -85,7 +79,7 @@
     
     font-size: 30px;
     width: 50%;
-    margin: 50px auto 20px;
+    margin: 10% auto 5%;
 }
 
 .ab_bot_text p{
@@ -101,31 +95,387 @@
     border: 3px solid #FABFBF;
     transform: rotate(-10deg);
     position: absolute;
-    right: 20px;
+    right: 2%;
     top: 30%;
 }
 
 .ab_bot_i1{
-    width: 650px;
-    height: 780px;
+    width: 55%;
     position: absolute;
-    top: 150px;
-    left: 50px;
+    top: 10%;
+    left: 5%;
 }
 
 .ab_bot_i2{
-    width: 400px;
-    height: 450px;
+    width: 40%;
     position: absolute;
     left: 10%;
-    bottom: 30px;
+    bottom: 2%;
 }
 
 .about_bot > img{
-    width: 300px;
+    width: 25%;
     position: absolute;
-    right: 50px;
+    right: 5%;
     bottom: 0;
     opacity: .6;
 }
+
 /* about content end */
+.gototop{
+    visibility: visible;
+}
+
+
+/* -------media query */
+@media (max-width: 575.98px){
+    /* about top */
+    .ab_top_left{
+        width: 25%;
+    }
+
+    .about_top span{
+        font-size: 26px;
+        letter-spacing: 1px;
+        left: 5%;
+    }
+
+    .ab_top_ibox{
+        width: 60%;
+    }
+    /* about content */
+    .about_bot{
+        padding-top: 150%;
+        border: 1px solid #000;
+    }
+
+    .ab_bot_top{
+        width: 45%;
+        height: 0;
+        padding-top: 45%;
+        left: 0%;
+        /* border: 1px solid #000; */
+    }
+
+    .ab_bot_text{
+        width: 45%;
+        height: 36%;
+        background-color: #FABFBF;
+        position: absolute;
+        right: 3%;
+        top: 50%;
+        color: white;
+        z-index: 3;
+    }
+
+    .ab_bot_text h3{
+        font-size: 20px;
+        width: 70%;
+        margin: 3% auto 2%;
+    }
+
+    .ab_bot_text p{
+        font-size: 12px;
+        line-height: 1.4;
+        width: 83%;
+        margin: 0 auto;
+        /* border: 1px solid #000; */
+        
+    }
+
+    .ab_bot_tb{
+        width: 70%;
+        height: 60%;
+        right: 15%;
+        top: 10%;
+    }
+
+    .ab_bot_i1 img{
+        display: none;
+    }
+
+    .ab_bot_i1{
+        border: 1px solid #000;
+        background-image: url('../img/about_2.png');
+        background-size: 90%;
+        -webkit-background-size: 90%;
+        -moz-background-size: 90%; 
+        -o-background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: top -15% left;
+        background-attachment: fixed;
+        
+        width: 80%;
+        height: 0;
+        padding-top: 80%;
+        top: 10%;
+        left: 7%;
+        /* position: relative; */
+    }
+
+    /* .ab_bot_i1::before{ */
+        /* position: absolute; */
+        /* width: 100%; */
+        /* content: "";
+        position: fixed;
+        z-index: -1;
+        top: 45%;
+        right: 0;
+        bottom: 0;
+        left: 10%;
+        background-image: inherit;
+        -webkit-background-size: 80%;
+        background-repeat: no-repeat;
+
+        -o-background-size: 90%;
+        background-size: 85%;
+    } */
+
+    .ab_bot_i2{
+        width: 30%;
+        left: 15%;
+        bottom: 3%;
+    }
+
+    .about_bot > img{
+        width: 20%;
+        right: 3%;
+    }
+
+    
+} 
+@media (min-width: 576px) and (max-width: 767.98px){
+    /* about top */
+    .ab_top_left{
+        width: 20%;
+    }
+
+    .about_top span{
+        font-size: 35px;
+        letter-spacing: 7px;
+        left: 5%;
+    }
+
+    .ab_top_ibox{
+        width: 65%;
+    }
+    /* about content */
+    .about_bot{
+        padding-top: 140%;
+    }
+
+    .ab_bot_top{
+        width: 40%;
+        height: 0;
+        padding-top: 40%;
+        top: 0;
+        left: -10%;
+        /* border: 1px solid #000; */
+    }
+
+    .ab_bot_text{
+        width: 45%;
+        height: 36%;
+        background-color: #FABFBF;
+        position: absolute;
+        right: 3%;
+        top: 50%;
+        color: white;
+        z-index: 3;
+    }
+
+    .ab_bot_text h3{
+        font-size: 24px;
+        width: 70%;
+        margin: 8% auto 5%;
+    }
+
+    .ab_bot_text p{
+        font-size: 16px;
+        line-height: 30px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .ab_bot_tb{
+        width: 500px;
+        height: 550px;
+        right: 20%;
+        top: 16%;
+    }
+
+    .ab_bot_i1 img{
+        display: none;
+    }
+
+    .ab_bot_i1{
+        /* border: 1px solid #000; */
+        background-image: url('../img/about_2.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-attachment: fixed;
+
+        width: 70%;
+        height: 0;
+        padding-top: 80%;
+        top: 8%;
+        left: 5%;
+    }
+
+    .ab_bot_i2{
+        width: 30%;
+        left: 15%;
+        bottom: 3%;
+    }
+
+    .about_bot > img{
+        width: 20%;
+        right: 5%;
+    }
+
+}
+  
+@media (min-width: 768px) and (max-width: 991.98px){
+    /* about top */
+    .ab_top_left{
+        width: 20%;
+    }
+
+    .about_top span{
+        font-size: 35px;
+        letter-spacing: 7px;
+        left: 5%;
+    }
+
+    .ab_top_ibox{
+        width: 65%;
+    }
+    /* about content */
+    .about_bot{
+        padding-top: 140%;
+    }
+
+    .ab_bot_top{
+        width: 40%;
+        height: 0;
+        padding-top: 40%;
+        top: 0;
+        left: -10%;
+        /* border: 1px solid #000; */
+    }
+
+    .ab_bot_text{
+        width: 45%;
+        height: 36%;
+        background-color: #FABFBF;
+        position: absolute;
+        right: 3%;
+        top: 50%;
+        color: white;
+        z-index: 3;
+    }
+
+    .ab_bot_text h3{
+        font-size: 24px;
+        width: 70%;
+        margin: 8% auto 5%;
+    }
+
+    .ab_bot_text p{
+        font-size: 16px;
+        line-height: 30px;
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .ab_bot_tb{
+        width: 500px;
+        height: 550px;
+        right: 20%;
+        top: 15%;
+        /* z-index: 1; */
+    }
+
+    .ab_bot_i1 img{
+        display: none;
+    }
+
+    .ab_bot_i1{
+        /* border: 1px solid #000; */
+        background-image: url('../img/about_2.png');
+        background-size: 70%;
+        background-repeat: no-repeat;
+        background-position: center left;
+        background-attachment: fixed;
+
+        width: 70%;
+        height: 0;
+        padding-top: 80%;
+        top: 8%;
+        left: 5%;
+    }
+
+    .ab_bot_i2{
+        width: 30%;
+        left: 15%;
+        bottom: 5%;
+    }
+
+    .about_bot > img{
+        width: 20%;
+        right: 5%;
+        bottom: 2%;
+        z-index: 6;
+    }
+}
+  
+@media (min-width: 992px) and (max-width: 1199.98px){
+    /* about top */
+    .about_top span{
+        font-size: 50px;
+    }
+
+    /* about content */
+    .ab_bot_top{
+        width: 30%;
+        left: 0%;
+    }
+
+    .ab_bot_text{
+        width: 48%;
+        height: 480px;
+        right: 5%;
+        top: 30%;
+    }
+
+    .ab_bot_text p{
+        font-size: 20px;
+        width: 70%;
+    }
+
+    .ab_bot_tb{
+        width: 45%;
+        height: 500px;
+        right: 5%;
+        top: 30%;
+    }
+
+    .ab_bot_i1{
+        width: 48%;
+        top: 10%;
+        left: 10%;
+    }
+
+    .ab_bot_i2{
+        width: 32%;
+        left: 13%;
+        bottom: 5%;
+    }
+}
+  
+/* @media (min-width: 1400px){
+    div.my_div1{
+      width: 1320px;
+    }
+} */

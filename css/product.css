@@ -9,56 +9,45 @@
 
 /* product top */
 .pdt_top{
-    width: 1366px;
-    height: 600px;
+    width: 100%;
+    padding-top: calc(100% * 2 / 5);
     position: relative;
     /* border: 1px solid #000; */
 }
 
 .pdt_top_left{
-    width: 340px;
-    height: 400px;
+    width: 25%;
+    height: 70%;
     background-color: #FABFBF;
     position: absolute;
-    left: -150px;
+    top: 0;
+    left: 0;
 }
 
 .pdt_top_ibox{
-    width: 1180px;
-    height: 500px;
+    width: 85%;
+    height: 85%;
+    /* border: 1px solid #000; */
+    overflow: hidden;
     position: absolute;
-    top: 50px;
-    right: 80px;
+    top: 7%;
+    left: 5%;
     z-index: 2;
 }
 
 .pdt_top_right{
-    width: 340px;
-    height: 400px;
+    width: 25%;
+    height: 70%;
     background-color: #B1D6C7;
     position: absolute;
     bottom: 0;
-    right: -150px;
+    right: 0;
 }
+
 /* product end */
 
 /* product nav */
-.breadcrumbs{
-    width: 30%;
-    display: flex;
-    align-items: center;
-    margin: 25px 0;
-}
 
-.breadcrumbs li{
-    margin-right: 10px;
-}
-
-.breadcrumbs a:hover{
-    color: #FABFBF;
-}
-
-/* Cat menu start */
 .cat_menu{
     display: flex;
     justify-content: center;
@@ -86,15 +75,12 @@
     color:white;
 }
 
-/* 分類選單  */
 .cat_btn_now a{
     background-color: #FABFBF;
     color:white;
 }
 
-/* Cat menu end */
 /* product nav end */
-
 
 /* Products start */
 .pdt_main{
@@ -104,9 +90,10 @@
 
 .pdt_container{
     /* border: 1px solid #000; */
+    min-width: 100%;
     box-sizing: border-box;
+    padding: 0 50px;
     display: flex;
-    /* justify-content: center; */
     flex-wrap: wrap;
 }
 
@@ -114,7 +101,7 @@
     width: 300px;
     height: 350px;
     border: 1px solid #FABFBF;
-    margin: 0 48px 30px;
+    margin: 0 30px 65px;
     font-size: 20px;
     text-align: center;
     font-weight: bold;
@@ -161,41 +148,49 @@
 .pdt_page ul a:hover{
     color: #FABFBF;
 }
+
+
+.pdt_page ul > li:nth-child(2) a{
+    color: #FABFBF;
+}   
 /* Products start end */
 
 
 /* ----- product Detail ----- */
 /* Product item */
+.breadcrumbs{
+    margin-top: 0;
+}
 .pdtitem_container{
     border: 1px solid #FABFBF;
     margin-bottom: 30px;
-    
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .pdtitem_container ul{
     /* border: 4px solid red; */
     display: flex;
     justify-content: space-around;
+    height: 80%;
 }
 
 .pdtitem_container > ul > li{
-    width: 45%;
-    height: 600px;
     /* border: 1px solid #FABFBF; */
 }
 
 .pdtitem_container img{
-    margin: 50px auto 30px;
-    height: 80%;
+    margin: 50px;
+    width: 150px;
+    /* height: 80%; */
     /* border: 1px solid brown; */
     filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, .3));
 }
 
 .text_box{
-    margin: 50px auto;
+    margin: 5% auto 5%;
     /* border: 3px solid orange; */
-    margin-bottom: 30px;
-    width: 90%;
+    width: 500px;
 }
 
 .text_box::after{
@@ -208,11 +203,11 @@
 }
 
 .text_box h4, .text_box p, .text_box span{
-    font-size: 45px;
+    font-size: 2.5em;
 }
 
 .text_box h5, .text_box h6{
-    font-size: 24px;
+    font-size: 1.3em;
     margin-bottom: 10px;
 }
 
@@ -228,6 +223,7 @@
 .text_box span{
     color: #FABFBF;
 }
+
 
 /* 購物數量 */
 .btn-numbox{
@@ -270,14 +266,309 @@
     font-size: 24px;
     letter-spacing: 3px;
     color: white;
+    cursor: pointer;
+}
+
+.btn_box button:hover{
+    box-shadow: 0 0 5px gray;
+    transform: scale(1.01);
+    transform-origin: center center;
 }
 
 .btn_box button:last-child{
     background-color: #7c7a7a;
 }
 
-
 /* Product item end */
 
 /* product Detail end*/
 
+/* ---------allpdt media query---------- */
+
+@media (max-width: 575.98px){
+    /* product top */
+    .pdt_top{
+        position: static;
+        padding-top: 0;
+        /* border: 1px solid #000; */
+    }
+
+    .pdt_top_left, .pdt_top_right{
+        display: none;
+    }
+
+    .pdt_top_ibox{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-size: 0;
+        height: 290px;
+        position: relative;
+    }
+
+    .pdt_top_ibox img{
+        max-width: none;
+        min-width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 39%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* product nav */
+
+    .cat_menu{
+        width: 90%;
+        margin: 0 auto;
+        font-size: 13px;
+        justify-content: space-between;
+        /* border: 1px solid #000; */
+    }
+
+    .cat_menu li{
+        margin-right: 0px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        flex-grow: 1;
+    }
+
+    .cat_menu li:first-child{
+        flex-grow: 1.5;
+    }
+
+    .cat_btn a{
+        width: 100%;
+        line-height: 30px;
+        border-radius: 40px;
+    }
+
+    .pdt_container{
+        max-width: 85%;
+        min-width: 0;
+        margin: 0 auto;
+        padding: 0;
+    }
+    
+    .pdt_card img {
+        max-width: 30%;
+        margin: 20px auto 20px;
+    }
+
+    .pdt_page ul{
+        width: 60%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px){
+    .pdt_top{
+        position: static;
+        padding-top: 0;
+    }
+
+    .pdt_top_left, .pdt_top_right{
+        display: none;
+    }
+
+    .pdt_top_ibox{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        font-size: 0;
+        height: 330px;
+        position: relative;
+    }
+
+    .pdt_top_ibox img{
+        max-width: none;
+        min-width: 100%;
+        height: 110%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .cat_menu{
+        width: 80%;
+        margin: 0 auto;
+        font-size: 18px;
+        justify-content: space-between;
+    }
+
+    .cat_menu li{
+        margin-right: 0px;
+        padding-right: 20px;
+        box-sizing: border-box;
+        flex-grow: 1;
+    }
+
+    .cat_menu li:first-child{
+        flex-grow: 1.5;
+    }
+
+    .cat_btn a{
+        width: 100%;
+        line-height: 40px;
+        border-radius: 40px;
+    }
+    /* product nav end */
+    
+    /* Products start */    
+    .pdt_container{
+        padding: 0 0 0 50px;
+    }
+    .pdt_card{
+        width: 40vw;
+        height: 300px;
+        margin: 0 10px 25px;
+        font-size: 16px;
+    }
+
+    .pdt_card img{
+        max-width: 30%;
+        margin: 10px auto 10px;
+    }
+    
+    .pdt_page ul{
+        width: 50%;
+    }
+
+}
+
+/* ------------------------------------------------------ */
+
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .pdt_container{
+        padding: 0 0 0 40px;
+    }
+    .pdt_card{
+        width: 40vw;
+        margin: 0 20px 45px;
+        /* font-size: 16px; */
+    }
+}
+
+/* ------------------------------------------------------ */
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .pdt_container{
+        padding: 0 20px;
+        max-width: 95%;
+        min-width: 0;
+        margin: 0 auto;
+    }
+    .pdt_card{
+        width: 27vw;
+        margin: 0 8px 45px;
+        font-size: 16px;
+    }
+}
+
+/* ------------------------------------------------------ */
+
+@media screen and (min-width: 1400px){
+    .pdt_top{
+      width: 1320px;
+      padding-top: calc(1320px * 2 / 5);
+    }
+}
+
+
+
+/* --------pdtitem media query----------- */
+@media (max-width: 767.98px){
+    .pdtitem_container{
+        max-width: 90%;
+    }
+
+    .pdtitem_container ul{
+        height: 60%;
+        
+    }
+
+    .pdtitem_container img{  
+        width: 80px;
+        margin: 80px 10px 0px 30px;
+    }
+    
+    .text_box{
+        margin: 5% auto 5%;
+        /* border: 3px solid orange; */
+        padding: 0 10px;
+        width: 250px;
+    }
+
+    .text_box h4, .text_box p, .text_box span{
+        font-size: 1.4em;
+    }
+    
+    .text_box h5, .text_box h6{
+        font-size: .8em;
+        margin-bottom: 10px;
+    }
+
+    /* 購物數量 */    
+    .numcut, .input-num, .numplus{
+        font-size: 1em;
+        /* border: 1px solid red; */
+        line-height: 1;
+    }
+
+    .btn_box{
+        /* border: 1px solid #000; */
+        width: 90%;
+        margin: 20px auto;
+    }
+    
+    .btn_box button{
+        width: 40%;
+        height: 35px;
+        margin: 0 10px;
+        font-size: 1em;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px){
+    .pdtitem_container{
+        max-width: 90%;
+    }
+
+    .pdtitem_container ul{
+        height: 60%;
+    }
+
+    .pdtitem_container img{  
+        width: 120px;
+    }
+    
+    .text_box{
+        margin: 5% auto 5%;
+        /* border: 3px solid orange; */
+        padding: 0 30px;
+        width: 400px;
+    }
+
+    .text_box h4, .text_box p, .text_box span{
+        font-size: 2em;
+    }
+    
+    .text_box h5, .text_box h6{
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    /* 購物數量 */
+    .numcut, .input-num, .numplus{
+        font-size: 20px;
+    }
+
+    .btn_box{
+        /* border: 1px solid #000; */
+        width: 90%;
+    }
+}
