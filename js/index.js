@@ -67,7 +67,7 @@ function change_slider(){
     }
     // pic.style.backgroundImage='url(./img/slider' + index + '.jpg)';
     // pic.style.backgroundImage='url(./img/slidersm' + index + '.png)';
-    pic.style.backgroundImage='url(../img/' + slider_pic + index + '.png)';
+    pic.style.backgroundImage='url("./img/' + slider_pic + index + '.png")';
     dot[index -1].classList.add('dot_now'); 
     index % pic_number == 0 ? index = 1 : index ++ ;           
 }
