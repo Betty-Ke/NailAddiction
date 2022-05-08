@@ -8,7 +8,11 @@ window.addEventListener("load", function(){
 function init_page(){
     //更改購物車數量
     let session_shopCarCon =  parseInt(sessionStorage.getItem('session_shopCarCon'));
-    document.getElementById('shop_car_count').innerHTML= "購物車("+ session_shopCarCon+"件)";
+    if(isNaN(session_shopCarCon)){
+        document.getElementById('shop_car_count').innerHTML= "購物車(0件)";
+    }else{
+        document.getElementById('shop_car_count').innerHTML= "購物車("+ session_shopCarCon+"件)";
+    }
 
     let shoping_goods = JSON.parse(sessionStorage.getItem('session_shop_goods'));
     for(let i = 0 ; i < shoping_goods.length ; i ++){
@@ -40,6 +44,8 @@ function init_page(){
     } 
     summary();
     delete_click();
+
+   
 }
 
 function deliver_way(){
@@ -97,12 +103,9 @@ function delete_click(){
                 sessionStorage.setItem('session_shopCarCon', --session_shopCarCon);
                 session_shop();
                 //移除明細購物車數量
-                if(isNaN){
-                    document.getElementById('shop_car_count').innerHTML= "購物車(0件)";
-                }else{
-                    document.getElementById('shop_car_count').innerHTML= "購物車("+ session_shopCarCon+"件)";
-                }
-
+            
+                document.getElementById('shop_car_count').innerHTML= "購物車("+ session_shopCarCon+"件)";
+                
                 if(session_shopCarCon == 0 ){
                     let shopCarCon = document.getElementsByClassName('shopCarCon')[0];
                     //購物車 為0時移除紅圈圈

@@ -103,6 +103,7 @@ main.tryit h3{
     border-radius: 10px;
     flex-grow: 1;
     cursor: pointer;
+    outline: none;
   }
 
 .colorbar{
