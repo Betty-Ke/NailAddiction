@@ -93,11 +93,15 @@ section.shopprocess{
     flex-grow: 1;
 }
 
-.shopping_list ul li:last-child{
+.shopping_list ul li:last-child, .shopping_list ul li:nth-child(5){
     flex-grow: 0.5;
 }
 
-.shopping_list ul li:first-child, .shopping_list ul li:nth-child(2){
+.shopping_list ul li:first-child{
+    flex-grow: 1.1;
+}
+
+.shopping_list ul li:nth-child(2){
     flex-grow: 1.3;
 }
 
@@ -113,9 +117,10 @@ div.iteminfo{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    height: 80%;
-    /* border: 1px solid red; */
+    /* height: 80%; */
+    border-bottom: 1px solid #ccc;
     text-align: center;
+    padding: 20px 0;
 }
 
 .iteminfo ul li{
@@ -124,12 +129,20 @@ div.iteminfo{
     flex-grow: 1;
 }
 
-.iteminfo ul li:last-child{
+.iteminfo ul li:last-child, .iteminfo ul li:nth-child(5){
     flex-grow: 0.5;
 }
 
-.iteminfo ul li:first-child, .iteminfo ul li:nth-child(2){
+.iteminfo ul li:first-child{
+    flex-grow: 1.1;
+}
+
+.iteminfo ul li:nth-child(2){
     flex-grow: 1.3;
+}
+
+.iteminfo ul li:nth-child(6){
+    color: #FABFBF;
 }
 
 .iteminfo ul li input{
@@ -143,7 +156,7 @@ div.iteminfo{
 }
 
 .iteminfo ul img{
-    max-height: 150px;
+    max-height: 80%;
     margin: 0 auto;
 }
 
@@ -270,18 +283,146 @@ div.iteminfo{
 
 /* -------------media query------------- */
 
+@media /*(min-width: 576px) and */(max-width: 767.98px){
+    
+    .shopprocess ul{
+        width: 70%;
+    }
+        
+    .shopprocess ul::before, .shopprocess ul::after{
+        left: 15%;
+    }
+    
+    .shopprocess ul::after{
+        left: 52%;
+    }
+    
+    /* shopping_list title */
+    
+    .shopping_list ul li{
+        font-size: 12px;
+         flex-basis: 0;
+         flex-grow: .5;
+     }
+     
+    .shopping_list ul li:nth-child(4){
+         flex-grow: 0.6;
+     }
+     
+     .shopping_list ul li:first-child{
+         flex-grow: 1.1;
+     }
+     
+     .shopping_list ul li:nth-child(2){
+         flex-grow: 1.3;
+     }
+    
+    
+    /* shopping_list info */
+        
+    .iteminfo ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 80%;
+        /* border: 1px solid red; */
+        text-align: center;
+    }
+    
+    .iteminfo ul li{
+        font-size: 12px;
+         flex-basis: 0;
+         flex-grow: .5;
+     }
+     
+    .iteminfo ul li:nth-child(4){
+         flex-grow: 0.6;
+     }
+     
+     .iteminfo ul li:first-child{
+         flex-grow: 1.1;
+     }
+     
+     .iteminfo ul li:nth-child(2){
+         flex-grow: 1.3;
+     }
+    
+    .iteminfo ul img{
+        max-height: 100px;
+    }
+    
+    
+    /* checkout */
+    .checkout{
+        max-width: 95%;
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid #000; */
+    }
+    
+    .payinfo, .pricesummary{
+        border: 2px solid #7c7a7a;
+        border-radius: 5px;
+        flex-basis: 0;
+        flex-grow: 1;
+        padding: 5px;
+        margin-bottom: 20px;
+    }
+    
+    .payinfo{
+        margin-right: 0px;
+    }
+        
+    .payinfo > div:first-child, .pricesummary > div:first-child{
+        border-bottom: 1px solid #ccc;
+        padding: 5px;
+        margin-bottom: 5px;
+    }
+    
+    .checkout label{
+        font-size: 14px;
+    }
+    
+    /* pricesummary */
+    .pricesummary ul{
+        /* border: 1px solid #000; */
+        width: 90%;
+        margin: 10px auto;
+        font-size: 14px;
+        
+    }
+    
+    .pricesummary ul li{
+        display: flex;
+        justify-content: space-between;
+        /* border: 1px solid #000; */
+        line-height: 35px;
+    }
+    
+    .pricesummary div:last-child{
+        border-top: 1px dashed #ccc;
+        width: 95%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        padding: 10px 0;
+    }
+  
+    /* btns */
+    .btns{
+        /* border: 1px solid #000; */
+        width: 90%;
+    }
+    
+}
+
 @media (min-width: 768px) and (max-width: 1199.98px){
     
     .shopprocess ul::before{
         left: 15%;
     }
-    
 
 }
 
 
-@media /*(min-width: 576px) and */(max-width: 767.98px){
-    div.my_div1{
-      width: 540px;
-    }
-}

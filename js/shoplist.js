@@ -1,5 +1,8 @@
 window.addEventListener("load", function(){
     init_page();
+    let deliver_btn = document.getElementById("deliver");
+    deliver_btn.addEventListener('change', deliver_way);
+    deliver_way();
 });
 
 function init_page(){
@@ -16,27 +19,46 @@ function init_page(){
         //購買數量
         let count = shoping_goods[i].count;
         //折扣
-        let discount = shoping_goods[i].discount == null ? "無折扣" : shoping_goods[i].discount ;
+        let discount = shoping_goods[i].discount == null ? "無" : shoping_goods[i].discount ;
         //價格
         let price = shoping_goods[i].price;
         let iteminfo = document.getElementsByClassName('iteminfo')[0];
         //小計數量乘折扣，若無折扣則乘價格
-        let subtotal = parseInt(count)* parseInt(discount == "無折扣" ? price : discount);
-        let discountstring = discount != "無折扣" ? "NT$ "+ discount : "無折扣"; 
+        let subtotal = parseInt(count)* parseInt(discount == "無" ? price : discount);
+        let discountstring = discount != "無" ? discount : "無"; 
         let p_html =`
         <ul data-index = ${i}>
             <li><img src="./img/${pic}"></li>
             <li>${name}</li>
-            <li>NT$ ${price}</li>
+            <li>${price}</li>
             <li>${discountstring}</li>
             <li>${count}</li>
-            <li class="subtotal" data-subtotal='${subtotal}' >NT$ ${subtotal}</li>
+            <li class="subtotal" data-subtotal='${subtotal}' >${subtotal}</li>
             <li class="btn_delete">x</li>
         </ul>`;
         iteminfo.insertAdjacentHTML('afterbegin',p_html);
     } 
     summary();
     delete_click();
+}
+
+function deliver_way(){
+    
+    let fare = document.getElementsByClassName("fare")[0];
+    let way = this.value;
+    console.log(way);
+    switch(way){
+        case 'f':
+            fare.innerHTML = 0;
+            break;
+        case 's':
+            fare.innerHTML = 60;
+            break;
+        case 'h':
+            fare.innerHTML = 80;
+            break;
+    }
+    summary();
 }
 
 function summary(){
@@ -59,6 +81,8 @@ function summary(){
     
 }
 
+
+
 function delete_click(){
     var btn_delete = document.getElementsByClassName('btn_delete');
     for(let i = 0 ; i < btn_delete.length ; i ++){
@@ -73,7 +97,12 @@ function delete_click(){
                 sessionStorage.setItem('session_shopCarCon', --session_shopCarCon);
                 session_shop();
                 //移除明細購物車數量
-                document.getElementById('shop_car_count').innerHTML= "購物車("+ session_shopCarCon+"件)";
+                if(isNaN){
+                    document.getElementById('shop_car_count').innerHTML= "購物車(0件)";
+                }else{
+                    document.getElementById('shop_car_count').innerHTML= "購物車("+ session_shopCarCon+"件)";
+                }
+
                 if(session_shopCarCon == 0 ){
                     let shopCarCon = document.getElementsByClassName('shopCarCon')[0];
                     //購物車 為0時移除紅圈圈
@@ -83,6 +112,6 @@ function delete_click(){
                 summary();
             });
     };
-    
 
 }
+
